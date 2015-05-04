@@ -1,0 +1,1403 @@
+2013-11-20 21:55:01.987769 ID: 1    Started
+2013-11-20 21:55:01.988523 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-20 21:55:06.231644 ID: 1    ++++PUT ID: 48661 buy 0.0122649483965 1630.6632
+2013-11-20 21:55:06.232893 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-20 22:25:16.612366 ID: 1    ---- CANCEL => ID: 48661
+2013-11-20 22:25:18.274043 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-20 22:25:32.582650 ID: 1    ++++PUT ID: 48693 buy 0.0122649483965 1630.6632
+2013-11-20 22:25:32.584369 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-20 22:27:42.768386 ID: 1    LONG  $:-2.61483999964e-06  M:0.01222815515  P:1630.6632
+2013-11-20 22:27:58.371909 ID: 1    ++++PUT ID: 48698 sell -0.01222815515 1648.6004952
+2013-11-20 22:27:58.373268 ID: 1    ASK  $:-2.61483999964e-06  M:0.01222815515  P:1630.6632
+2013-11-20 22:30:28.196266 getOrder(): Valor do tonce invalido.
+2013-11-20 22:30:49.715468 getOrder(): Valor do tonce invalido.
+2013-11-20 22:32:22.728029 getOrder(): Valor do tonce invalido.
+2013-11-20 22:42:29.066932 getOrder(): Valor do tonce invalido.
+2013-11-20 22:54:30.316045 getOrder(): Valor do tonce invalido.
+2013-11-20 22:57:20.914385 getOrder(): Valor do tonce invalido.
+2013-11-20 22:57:49.307496 getOrder(): Valor do tonce invalido.
+2013-11-20 22:58:13.163038 getOrder(): Valor do tonce invalido.
+2013-11-20 22:58:43.789441 getOrder(): Valor do tonce invalido.
+2013-11-20 22:59:19.675476 getOrder(): Valor do tonce invalido.
+2013-11-20 22:59:51.147500 getOrder(): Valor do tonce invalido.
+2013-11-20 23:08:38.796898 cancelOrder(): Valor do tonce invalido.
+2013-11-20 23:08:38.798251 ID: 1    DEAD  $:-2.61483999964e-06  M:0.01222815515  P:1630.6632
+2013-11-20 23:08:52.514691 putOrder(): Valor do tonce invalido.
+2013-11-20 23:08:52.515983 ID: 1    DEAD  $:-2.61483999964e-06  M:0.01222815515  P:1630.6632
+2013-11-20 23:09:02.519674 ID: 1    Clearing Orders...
+2013-11-20 23:09:16.586157 getOrder(): Valor do tonce invalido.
+2013-11-20 23:27:13.461568 ID: 1    Started
+2013-11-20 23:27:13.462970 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-20 23:27:17.347658 ID: 1    ++++ PUT ID: 48757 buy 0.0119307175358 1676.34511
+2013-11-20 23:27:17.348836 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-20 23:42:25.996352 ID: 1    Started
+2013-11-20 23:42:25.997721 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-20 23:43:19.028714 ID: 1    Started
+2013-11-20 23:43:19.030130 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-20 23:43:40.736285 putOrder(): Valor do tonce invalido.
+2013-11-20 23:44:00.694774 clampTarget(): Valor do tonce invalido.
+2013-11-20 23:44:20.791411 putOrder(): Valor do tonce invalido.
+2013-11-20 23:44:40.819051 clampTarget(): Valor do tonce invalido.
+2013-11-20 23:45:00.793635 putOrder(): Valor do tonce invalido.
+2013-11-20 23:45:18.405589 ID: 1    Started
+2013-11-20 23:45:18.407058 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-20 23:46:12.593634 putOrder(): Valor do tonce invalido.
+2013-11-20 23:47:16.487008 clampTarget(): Valor do tonce invalido.
+2013-11-20 23:47:46.063979 putOrder(): Valor do tonce invalido.
+2013-11-20 23:48:18.428892 clampTarget(): Valor do tonce invalido.
+2013-11-20 23:48:34.908663 putOrder(): Valor do tonce invalido.
+2013-11-20 23:49:12.246943 ID: 1    ++++ PUT ID: 48786 buy 0.0119307175358 1676.34511
+2013-11-20 23:49:12.249776 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 00:19:14.944443 ID: 1    Started
+2013-11-21 00:19:14.945878 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 00:20:05.888629 ID: 1    Started
+2013-11-21 00:20:05.890020 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 00:20:27.788807 ID: 1    ++++ PUT ID: 48810 buy 0.0120287511567 1662.68299505
+2013-11-21 00:20:27.790049 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 00:21:23.473509 ID: 1    Started
+2013-11-21 00:21:23.474934 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 00:21:45.477125 ID: 1    ++++ PUT ID: 48811 buy 0.0119830476359 1669.02449258
+2013-11-21 00:21:45.477904 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 00:27:25.393401 ID: 1    ---- CANCEL => ID: 48811
+2013-11-21 00:27:45.523360 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 00:28:26.309348 ID: 1    ++++ PUT ID: 48821 buy 0.0119603258672 1672.19524134
+2013-11-21 00:28:26.310676 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 00:29:23.988999 ID: 1    Started
+2013-11-21 00:29:23.990444 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 00:29:46.149929 ID: 1    ++++ PUT ID: 48823 buy 0.0120287511567 1662.68299505
+2013-11-21 00:29:46.151318 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 00:35:06.141341 ID: 1    ---- CANCEL => ID: 48823
+2013-11-21 00:35:26.183064 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 00:36:06.303197 ID: 1    ++++ PUT ID: 48831 buy 0.0120287511567 1662.68299505
+2013-11-21 00:36:06.304450 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:14:16.487178 ID: 1    Started
+2013-11-21 01:14:16.488605 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:14:38.348068 ID: 1    ++++ PUT ID: 48868 buy 0.0122987993297 1626.175
+2013-11-21 01:14:38.349355 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:15:51.374262 getOrder(): Valor do tonce invalido.
+2013-11-21 01:20:01.275140 ID: 1    ---- CANCEL ID: 48868
+2013-11-21 01:20:22.069427 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:21:01.735831 ID: 1    ++++ PUT ID: 48874 buy 0.012275492746 1629.2625
+2013-11-21 01:21:01.737092 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:26:38.624421 ID: 1    ---- CANCEL ID: 48874
+2013-11-21 01:26:58.699080 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:27:38.866305 ID: 1    ++++ PUT ID: 48884 buy 0.0124082170967 1611.8351125
+2013-11-21 01:27:38.867576 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:33:20.832728 ID: 1    ---- CANCEL ID: 48884
+2013-11-21 01:33:41.601113 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:34:21.309912 ID: 1    ++++ PUT ID: 48899 buy 0.0124082170967 1611.8351125
+2013-11-21 01:34:21.311882 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:35:03.399737 ID: 1    Started
+2013-11-21 01:35:03.401180 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:35:28.224021 ID: 1    ++++ PUT ID: 48903 buy 0.0124082170967 1611.8351125
+2013-11-21 01:35:28.224817 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:46:05.754577 ID: 1    ---- CANCEL ID: 48903
+2013-11-21 01:46:25.935439 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:47:06.051049 ID: 1    ++++ PUT ID: 48926 buy 0.012256028434 1631.85
+2013-11-21 01:47:06.052313 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 01:57:29.238947 ID: 1    ---- CANCEL ID: 48926
+2013-11-21 01:57:46.341477 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 01:58:28.401889 ID: 1    ++++ PUT ID: 48949 buy 0.012256028434 1631.85
+2013-11-21 01:58:28.405042 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 02:10:31.357647 getOrder(): 
+2013-11-21 09:21:59.698958 ID: 1    Started
+2013-11-21 09:21:59.725415 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 09:22:22.784824 ID: 1    ++++ PUT ID: 49052 buy 0.0120137613672 1664.757555
+2013-11-21 09:22:22.785986 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 09:32:17.839592 getOrder(): Valor do tonce invalido.
+2013-11-21 09:34:21.884459 getOrder(): Valor do tonce invalido.
+2013-11-21 09:42:43.379674 ID: 1    ---- CANCEL ID: 49052
+2013-11-21 09:43:03.534287 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 09:43:43.640531 ID: 1    ++++ PUT ID: 49071 buy 0.0119708684965 1670.722555
+2013-11-21 09:43:43.641701 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 09:54:43.872683 ID: 1    Started
+2013-11-21 09:54:43.874040 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 09:55:05.785734 ID: 1    ++++ PUT ID: 49079 buy 0.0118955570095 1681.3
+2013-11-21 09:55:05.786878 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 10:15:26.230842 ID: 1    ---- CANCEL ID: 49079
+2013-11-21 10:15:53.624270 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 10:16:46.576228 putOrder(): Valor do tonce invalido.
+2013-11-21 10:17:07.929363 ID: 1    ++++ PUT ID: 49098 buy 0.0118955570095 1681.3
+2013-11-21 10:17:07.930577 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 10:37:35.998529 cancelOrder(): 
+2013-11-21 10:37:35.999774 ID: 1    DEAD  $:20.0  M:0.0  P:0.0
+2013-11-21 10:37:36.000184 ID: 1    Clearing Orders...
+2013-11-21 10:37:50.037155 ID: 1    ---- CANCEL ID: 49098
+2013-11-21 10:38:11.136305 ID: 1    Clearing Done.
+2013-11-21 10:40:51.391973 ID: 1    Started
+2013-11-21 10:40:51.393280 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 10:41:13.377105 ID: 1    ++++ PUT ID: 49131 buy 0.011555683952 1730.75
+2013-11-21 10:41:13.377892 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 10:46:53.981519 ID: 1    LONG  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 10:47:33.603309 ID: 1    ++++ PUT ID: 49135 sell -0.01152101296 1749.78825
+2013-11-21 10:47:33.604095 ID: 1    ASK  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 11:07:53.908026 ID: 1    ---- CANCEL ID: 49135
+2013-11-21 11:08:14.088167 ID: 1    LONG  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 11:08:54.222831 ID: 1    ++++ PUT ID: 49150 sell -0.01152101296 1749.78825
+2013-11-21 11:08:54.224099 ID: 1    ASK  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 11:15:45.605735 getOrder(): Valor do tonce invalido.
+2013-11-21 11:16:48.254350 getOrder(): Valor do tonce invalido.
+2013-11-21 11:29:15.486529 ID: 1    ---- CANCEL ID: 49150
+2013-11-21 11:29:34.684587 ID: 1    LONG  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 11:30:16.689488 ID: 1    ++++ PUT ID: 49181 sell -0.01152101296 1749.78825
+2013-11-21 11:30:16.690651 ID: 1    ASK  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 11:50:55.158222 ID: 1    ---- CANCEL ID: 49181
+2013-11-21 11:51:15.295152 ID: 1    LONG  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 11:51:58.291984 ID: 1    ++++ PUT ID: 49204 sell -0.01152101296 1749.78825
+2013-11-21 11:51:58.293236 ID: 1    ASK  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 12:12:41.435230 ID: 1    ---- CANCEL ID: 49204
+2013-11-21 12:12:55.867178 ID: 1    LONG  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 12:13:35.947189 ID: 1    ++++ PUT ID: 49229 sell -0.01152101296 1749.78825
+2013-11-21 12:13:35.948449 ID: 1    ASK  $:6.83999999751e-06  M:0.01152101296  P:1730.75
+2013-11-21 12:14:36.496293 ID: 1    SHORT  $:20.0988567824  M:2.96000000032e-09  P:1730.75
+2013-11-21 12:15:15.983104 ID: 1    ++++ PUT ID: 49232 buy 0.0116142071578 1730.54057925
+2013-11-21 12:15:15.984300 ID: 1    BID  $:20.0988567824  M:2.96000000032e-09  P:1730.75
+2013-11-21 12:15:46.482004 getOrder(): Valor do tonce invalido.
+2013-11-21 12:16:50.907566 getOrder(): Valor do tonce invalido.
+2013-11-21 12:35:36.378651 ID: 1    ---- CANCEL ID: 49232
+2013-11-21 12:35:56.599879 ID: 1    SHORT  $:20.0988567824  M:2.96000000032e-09  P:1730.75
+2013-11-21 12:36:36.576094 ID: 1    ++++ PUT ID: 49257 buy 0.0115141094718 1745.585
+2013-11-21 12:36:36.577296 ID: 1    BID  $:20.0988567824  M:2.96000000032e-09  P:1730.75
+2013-11-21 12:56:57.007619 ID: 1    ---- CANCEL ID: 49257
+2013-11-21 12:57:17.142975 ID: 1    SHORT  $:20.0988567824  M:2.96000000032e-09  P:1730.75
+2013-11-21 12:57:57.225458 ID: 1    ++++ PUT ID: 49289 buy 0.011309072464 1777.233
+2013-11-21 12:57:57.226644 ID: 1    BID  $:20.0988567824  M:2.96000000032e-09  P:1730.75
+2013-11-21 13:14:58.421668 ID: 1    LONG  $:4.37904410333e-06  M:0.01127514575  P:1777.2329878
+2013-11-21 13:15:50.909887 putOrder(): Valor do tonce invalido.
+2013-11-21 13:16:35.999690 putOrder(): Valor do tonce invalido.
+2013-11-21 13:16:57.952767 ID: 1    ++++ PUT ID: 49315 sell -0.01127514575 1796.78255066
+2013-11-21 13:16:57.953984 ID: 1    ASK  $:4.37904410333e-06  M:0.01127514575  P:1777.2329878
+2013-11-21 13:37:18.289622 ID: 1    ---- CANCEL ID: 49315
+2013-11-21 13:37:38.436592 ID: 1    LONG  $:4.37904410333e-06  M:0.01127514575  P:1777.2329878
+2013-11-21 13:38:18.518221 ID: 1    ++++ PUT ID: 49334 sell -0.01127514575 1796.78255066
+2013-11-21 13:38:18.519389 ID: 1    ASK  $:4.37904410333e-06  M:0.01127514575  P:1777.2329878
+2013-11-21 14:21:38.013258 ID: 1    Started
+2013-11-21 14:21:38.014586 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 14:22:00.033117 ID: 1    ++++ PUT ID: 49396 buy 0.0112549240293 1777.0
+2013-11-21 14:22:00.034567 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 14:23:20.733749 ID: 1    LONG  $:7.15999999912e-06  M:0.01122115524  P:1777.0
+2013-11-21 14:24:00.034708 ID: 1    ++++ PUT ID: 49400 sell -0.01122115524 1777.0
+2013-11-21 14:24:00.035930 ID: 1    ASK  $:7.15999999912e-06  M:0.01122115524  P:1777.0
+2013-11-21 14:44:20.371446 ID: 1    ---- CANCEL ID: 49400
+2013-11-21 14:44:41.419907 ID: 1    LONG  $:7.15999999912e-06  M:0.01122115524  P:1777.0
+2013-11-21 14:45:20.629454 ID: 1    ++++ PUT ID: 49417 sell -0.01122115524 1777.0
+2013-11-21 14:45:20.630020 ID: 1    ASK  $:7.15999999912e-06  M:0.01122115524  P:1777.0
+2013-11-21 14:51:04.711130 ID: 1    SHORT  $:19.880188476  M:-4.7600000018e-09  P:0.0
+2013-11-21 14:51:41.571046 ID: 1    ++++ PUT ID: 49426 buy 0.0111875005493 1777.0
+2013-11-21 14:51:41.571615 ID: 1    BID  $:19.880188476  M:-4.7600000018e-09  P:0.0
+2013-11-21 14:59:57.301879 ID: 1    Started
+2013-11-21 14:59:57.302523 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 15:00:27.129899 ID: 1    ++++ PUT ID: 49433 buy 0.0113801045459 1757.4530989
+2013-11-21 15:00:27.131121 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 15:20:59.707698 ID: 1    ---- CANCEL ID: 49433
+2013-11-21 15:21:19.875914 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-21 15:21:59.938155 ID: 1    ++++ PUT ID: 49449 buy 0.0112346927312 1780.2
+2013-11-21 15:21:59.939343 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-21 15:24:00.941300 ID: 1    LONG  $:4.86199999727e-06  M:0.01120098593  P:1780.2
+2013-11-21 15:24:40.105734 ID: 1    ++++ PUT ID: 49454 sell -0.01120098593 1799.7822
+2013-11-21 15:24:40.107026 ID: 1    ASK  $:4.86199999727e-06  M:0.01120098593  P:1780.2
+2013-11-21 15:30:14.904294 getOrder(): Valor do tonce invalido.
+2013-11-21 15:30:57.329222 ID: 1    SHORT  $:20.0988692591  M:-4.06999999848e-09  P:0.0
+2013-11-21 15:31:36.340514 ID: 1    ++++ PUT ID: 49467 buy 0.0112902310185 1780.2
+2013-11-21 15:31:36.341685 ID: 1    BID  $:20.0988692591  M:-4.06999999848e-09  P:0.0
+2013-11-21 15:38:17.832306 ID: 1    LONG  $:1.81310486269e-06  M:0.01125635524  P:1780.20064367
+2013-11-21 15:39:03.229603 ID: 1    ++++ PUT ID: 49471 sell -0.01125635524 1799.78285075
+2013-11-21 15:39:03.230818 ID: 1    ASK  $:1.81310486269e-06  M:0.01125635524  P:1780.20064367
+2013-11-21 15:42:00.013623 ID: 1    SHORT  $:20.1982284835  M:-4.75999999833e-09  P:0.0
+2013-11-21 15:42:41.148733 ID: 1    ++++ PUT ID: 49482 buy 0.0111844907806 1805.914
+2013-11-21 15:42:41.150063 ID: 1    BID  $:20.1982284835  M:-4.75999999833e-09  P:0.0
+2013-11-21 15:44:40.133499 ID: 1    LONG  $:1.40962658435e-06  M:0.01115093177  P:1805.91477089
+2013-11-21 15:45:29.138366 ID: 1    ++++ PUT ID: 49487 sell -0.01115093177 1825.77983337
+2013-11-21 15:45:29.139601 ID: 1    ASK  $:1.40962658435e-06  M:0.01115093177  P:1805.91477089
+2013-11-21 15:48:40.973865 ID: 1    SHORT  $:20.2980670601  M:1.77000000247e-09  P:1805.91477089
+2013-11-21 15:49:19.135058 ID: 1    ++++ PUT ID: 49492 buy 0.0112152684884 1809.86011
+2013-11-21 15:49:19.136261 ID: 1    BID  $:20.2980670601  M:1.77000000247e-09  P:1805.91477089
+2013-11-21 15:57:41.215089 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 15:58:19.267336 ID: 1    ++++ PUT ID: 49501 sell -0.01118162596 1829.76857058
+2013-11-21 15:58:19.268683 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 16:15:49.947426 getOrder(): Valor do tonce invalido.
+2013-11-21 16:18:39.662234 ID: 1    ---- CANCEL ID: 49501
+2013-11-21 16:19:00.146355 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 16:19:39.941524 ID: 1    ++++ PUT ID: 49537 sell -0.01118162596 1829.76857058
+2013-11-21 16:19:39.942710 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 16:40:06.131777 ID: 1    ---- CANCEL ID: 49537
+2013-11-21 16:40:23.693853 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 16:41:03.526753 ID: 1    ++++ PUT ID: 49566 sell -0.01118162596 1829.76857058
+2013-11-21 16:41:03.527964 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 17:01:23.887523 ID: 1    ---- CANCEL ID: 49566
+2013-11-21 17:01:44.354058 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 17:02:24.225693 ID: 1    ++++ PUT ID: 49613 sell -0.01118162596 1829.76857058
+2013-11-21 17:02:24.226527 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 17:16:39.674018 getOrder(): Valor do tonce invalido.
+2013-11-21 17:22:46.054491 ID: 1    ---- CANCEL ID: 49613
+2013-11-21 17:23:07.665795 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 17:23:46.377555 ID: 1    ++++ PUT ID: 49651 sell -0.01118162596 1829.76857058
+2013-11-21 17:23:46.378394 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 17:44:24.997265 ID: 1    ---- CANCEL ID: 49651
+2013-11-21 17:44:45.514147 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 17:45:25.332829 ID: 1    ++++ PUT ID: 49699 sell -0.01118162596 1829.76857058
+2013-11-21 17:45:25.334054 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 18:05:45.678784 ID: 1    ---- CANCEL ID: 49699
+2013-11-21 18:06:07.015983 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 18:06:45.984137 ID: 1    ++++ PUT ID: 49721 sell -0.01118162596 1829.76857058
+2013-11-21 18:06:45.985396 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 18:16:46.369792 getOrder(): Valor do tonce invalido.
+2013-11-21 18:27:07.845081 ID: 1    ---- CANCEL ID: 49721
+2013-11-21 18:27:28.354650 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 18:28:08.219905 ID: 1    ++++ PUT ID: 49743 sell -0.01118162596 1829.76857058
+2013-11-21 18:28:08.221119 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 18:48:28.506984 ID: 1    ---- CANCEL ID: 49743
+2013-11-21 18:48:48.952415 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 18:49:28.732697 ID: 1    ++++ PUT ID: 49760 sell -0.01118162596 1829.76857058
+2013-11-21 18:49:28.733909 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 19:09:54.679953 ID: 1    ---- CANCEL ID: 49760
+2013-11-21 19:10:15.179190 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 19:10:55.041437 ID: 1    ++++ PUT ID: 49783 sell -0.01118162596 1829.76857058
+2013-11-21 19:10:55.042652 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 19:15:49.368820 getOrder(): Valor do tonce invalido.
+2013-11-21 19:16:39.234508 getOrder(): Valor do tonce invalido.
+2013-11-21 19:31:20.837964 ID: 1    ---- CANCEL ID: 49783
+2013-11-21 19:31:43.792055 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 19:32:22.628115 ID: 1    ++++ PUT ID: 49803 sell -0.01118162596 1829.76857058
+2013-11-21 19:32:22.629311 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 19:53:01.703918 ID: 1    ---- CANCEL ID: 49803
+2013-11-21 19:53:22.957224 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 19:54:01.878787 ID: 1    ++++ PUT ID: 49823 sell -0.01118162596 1829.76857058
+2013-11-21 19:54:01.879978 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 20:14:21.937328 ID: 1    ---- CANCEL ID: 49823
+2013-11-21 20:14:42.614178 ID: 1    LONG  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 20:15:22.440018 ID: 1    ++++ PUT ID: 49841 sell -0.01118162596 1829.76857058
+2013-11-21 20:15:22.441453 ID: 1    ASK  $:-2.73575043863e-06  M:0.01118162596  P:1809.86010938
+2013-11-21 20:22:50.766469 getOrder(): Valor do tonce invalido.
+2013-11-21 20:23:14.074082 getOrder(): Valor do tonce invalido.
+2013-11-21 20:23:40.626577 getOrder(): Valor do tonce invalido.
+2013-11-21 20:24:12.165373 getOrder(): Valor do tonce invalido.
+2013-11-21 20:24:45.352824 getOrder(): Valor do tonce invalido.
+2013-11-21 20:25:12.203043 getOrder(): Valor do tonce invalido.
+2013-11-21 20:25:52.965447 getOrder(): Valor do tonce invalido.
+2013-11-21 20:26:26.644585 getOrder(): Valor do tonce invalido.
+2013-11-21 20:26:55.643153 getOrder(): Valor do tonce invalido.
+2013-11-21 20:27:26.560831 getOrder(): Valor do tonce invalido.
+2013-11-22 02:14:53.903915 ID: 1    Started
+2013-11-22 02:14:53.905072 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 02:15:15.580707 putOrder(): Valor do tonce invalido.
+2013-11-22 02:15:44.970550 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:15:55.619374 putOrder(): Valor do tonce invalido.
+2013-11-22 02:16:15.572653 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:16:53.054023 putOrder(): Valor do tonce invalido.
+2013-11-22 02:17:15.642620 putOrder(): Valor do tonce invalido.
+2013-11-22 02:17:37.142310 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:17:57.485484 putOrder(): Valor do tonce invalido.
+2013-11-22 02:18:15.637704 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:18:35.696427 putOrder(): Valor do tonce invalido.
+2013-11-22 02:18:55.644683 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:19:15.663363 putOrder(): Valor do tonce invalido.
+2013-11-22 02:19:35.704666 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:19:55.668493 putOrder(): Valor do tonce invalido.
+2013-11-22 02:20:15.725497 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:20:35.709595 putOrder(): Valor do tonce invalido.
+2013-11-22 02:20:55.755506 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:21:15.800120 putOrder(): Valor do tonce invalido.
+2013-11-22 02:21:35.790577 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:21:55.780776 putOrder(): Valor do tonce invalido.
+2013-11-22 02:22:15.939957 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:22:35.831862 putOrder(): Valor do tonce invalido.
+2013-11-22 02:22:55.813152 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:23:15.840672 putOrder(): Valor do tonce invalido.
+2013-11-22 02:23:35.858597 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:23:55.854385 putOrder(): Valor do tonce invalido.
+2013-11-22 02:24:15.871086 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:24:36.928548 putOrder(): Valor do tonce invalido.
+2013-11-22 02:24:55.875596 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:25:15.886480 putOrder(): Valor do tonce invalido.
+2013-11-22 02:25:35.884254 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:25:55.918932 putOrder(): Valor do tonce invalido.
+2013-11-22 02:26:15.931491 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:26:35.885071 putOrder(): Valor do tonce invalido.
+2013-11-22 02:26:55.916238 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:27:16.885911 putOrder(): Valor do tonce invalido.
+2013-11-22 02:27:35.965897 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:27:55.972320 putOrder(): Valor do tonce invalido.
+2013-11-22 02:28:15.972816 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:28:35.953425 putOrder(): Valor do tonce invalido.
+2013-11-22 02:28:56.020688 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:29:15.998936 putOrder(): Valor do tonce invalido.
+2013-11-22 02:29:36.033327 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:29:56.003045 putOrder(): Valor do tonce invalido.
+2013-11-22 02:30:16.238896 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:30:36.072022 putOrder(): Valor do tonce invalido.
+2013-11-22 02:30:56.036888 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:31:16.006359 putOrder(): Valor do tonce invalido.
+2013-11-22 02:31:36.080820 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:31:56.078754 putOrder(): Valor do tonce invalido.
+2013-11-22 02:32:16.027245 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:32:36.082415 putOrder(): Valor do tonce invalido.
+2013-11-22 02:32:56.043456 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:33:16.080489 putOrder(): Valor do tonce invalido.
+2013-11-22 02:33:36.103516 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:33:56.098281 putOrder(): Valor do tonce invalido.
+2013-11-22 02:34:16.134239 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:34:36.384413 putOrder(): Valor do tonce invalido.
+2013-11-22 02:34:56.092311 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:35:19.891276 putOrder(): Valor do tonce invalido.
+2013-11-22 02:35:36.113875 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:35:56.146979 putOrder(): Valor do tonce invalido.
+2013-11-22 02:36:19.146222 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:36:36.168025 putOrder(): Valor do tonce invalido.
+2013-11-22 02:36:56.158785 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:37:18.040795 putOrder(): Valor do tonce invalido.
+2013-11-22 02:37:38.175270 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:37:57.593782 putOrder(): Valor do tonce invalido.
+2013-11-22 02:38:16.223522 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:38:51.245900 putOrder(): Valor do tonce invalido.
+2013-11-22 02:39:20.034548 putOrder(): Valor do tonce invalido.
+2013-11-22 02:39:40.050845 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:39:59.956393 putOrder(): Valor do tonce invalido.
+2013-11-22 02:40:17.754032 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:40:37.699885 putOrder(): Valor do tonce invalido.
+2013-11-22 02:40:58.131985 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:41:16.608123 putOrder(): Valor do tonce invalido.
+2013-11-22 02:41:37.085662 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:41:58.249785 putOrder(): Valor do tonce invalido.
+2013-11-22 02:42:16.398718 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:42:36.421423 putOrder(): Valor do tonce invalido.
+2013-11-22 02:42:56.821885 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:43:17.155532 putOrder(): Valor do tonce invalido.
+2013-11-22 02:43:36.575456 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:43:56.439756 putOrder(): Valor do tonce invalido.
+2013-11-22 02:44:16.419528 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:44:38.345791 putOrder(): Valor do tonce invalido.
+2013-11-22 02:44:56.442253 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:45:16.479523 putOrder(): Valor do tonce invalido.
+2013-11-22 02:45:36.482775 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:45:56.501167 putOrder(): Valor do tonce invalido.
+2013-11-22 02:46:16.494329 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:46:36.505157 putOrder(): Valor do tonce invalido.
+2013-11-22 02:46:56.462540 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:47:16.486210 putOrder(): Valor do tonce invalido.
+2013-11-22 02:47:36.517411 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:47:56.525639 putOrder(): Valor do tonce invalido.
+2013-11-22 02:48:16.543834 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:48:36.593622 putOrder(): Valor do tonce invalido.
+2013-11-22 02:48:56.572795 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:49:16.576877 putOrder(): Valor do tonce invalido.
+2013-11-22 02:49:36.581076 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:49:56.559351 putOrder(): Valor do tonce invalido.
+2013-11-22 02:50:16.567565 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:50:36.617492 putOrder(): Valor do tonce invalido.
+2013-11-22 02:50:56.675383 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:51:18.652134 putOrder(): Valor do tonce invalido.
+2013-11-22 02:51:38.533129 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:51:58.243747 putOrder(): Valor do tonce invalido.
+2013-11-22 02:52:16.617314 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:52:39.556034 putOrder(): Valor do tonce invalido.
+2013-11-22 02:52:58.465725 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:53:19.021989 putOrder(): Valor do tonce invalido.
+2013-11-22 02:53:38.509366 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:53:56.632073 putOrder(): Valor do tonce invalido.
+2013-11-22 02:54:16.690260 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:54:36.655610 putOrder(): Valor do tonce invalido.
+2013-11-22 02:54:58.143184 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:55:16.708242 putOrder(): Valor do tonce invalido.
+2013-11-22 02:55:36.704789 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:55:56.728806 putOrder(): Valor do tonce invalido.
+2013-11-22 02:56:17.388720 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:56:36.756166 putOrder(): Valor do tonce invalido.
+2013-11-22 02:56:56.773730 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:57:16.804213 putOrder(): Valor do tonce invalido.
+2013-11-22 02:57:36.808938 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:57:56.768170 putOrder(): Valor do tonce invalido.
+2013-11-22 02:58:16.783455 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:58:36.780402 putOrder(): Valor do tonce invalido.
+2013-11-22 02:58:56.833561 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:59:16.814171 putOrder(): Valor do tonce invalido.
+2013-11-22 02:59:36.821684 clampTarget(): Valor do tonce invalido.
+2013-11-22 02:59:56.830507 putOrder(): Valor do tonce invalido.
+2013-11-22 03:00:16.864859 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:00:36.837476 putOrder(): Valor do tonce invalido.
+2013-11-22 03:00:56.899192 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:01:16.843609 putOrder(): Valor do tonce invalido.
+2013-11-22 03:01:43.312575 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:01:56.860996 putOrder(): Valor do tonce invalido.
+2013-11-22 03:02:18.647227 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:02:39.413533 putOrder(): Valor do tonce invalido.
+2013-11-22 03:02:59.050763 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:03:19.050506 putOrder(): Valor do tonce invalido.
+2013-11-22 03:03:38.804851 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:03:58.699772 putOrder(): Valor do tonce invalido.
+2013-11-22 03:04:18.999068 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:04:36.957590 putOrder(): Valor do tonce invalido.
+2013-11-22 03:04:56.998779 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:05:18.355550 putOrder(): Valor do tonce invalido.
+2013-11-22 03:05:36.977290 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:05:57.029603 putOrder(): Valor do tonce invalido.
+2013-11-22 03:06:18.385951 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:06:37.028279 putOrder(): Valor do tonce invalido.
+2013-11-22 03:06:57.046398 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:07:17.003634 putOrder(): Valor do tonce invalido.
+2013-11-22 03:07:37.041480 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:07:57.034699 putOrder(): Valor do tonce invalido.
+2013-11-22 03:08:17.049819 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:08:37.106700 putOrder(): Valor do tonce invalido.
+2013-11-22 03:08:57.047040 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:09:17.111355 putOrder(): Valor do tonce invalido.
+2013-11-22 03:09:37.096294 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:09:57.144260 putOrder(): Valor do tonce invalido.
+2013-11-22 03:10:17.117640 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:10:37.136372 putOrder(): Valor do tonce invalido.
+2013-11-22 03:10:57.124925 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:11:17.183828 putOrder(): Valor do tonce invalido.
+2013-11-22 03:11:37.157821 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:11:57.196966 putOrder(): Valor do tonce invalido.
+2013-11-22 03:12:17.216106 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:12:37.200825 putOrder(): Valor do tonce invalido.
+2013-11-22 03:12:57.239286 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:13:17.230332 putOrder(): Valor do tonce invalido.
+2013-11-22 03:13:37.203201 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:13:57.248098 putOrder(): Valor do tonce invalido.
+2013-11-22 03:14:19.497283 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:14:39.218160 putOrder(): Valor do tonce invalido.
+2013-11-22 03:14:58.754384 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:15:19.165780 putOrder(): Valor do tonce invalido.
+2013-11-22 03:15:48.753505 clampTarget(): Valor do tonce invalido.
+2013-11-22 03:16:04.604474 ID: 1    ++++ PUT ID: 50297 buy 0.0112378143462 1779.7055
+2013-11-22 03:16:04.605345 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-22 03:16:18.480777 getOrder(): Valor do tonce invalido.
+2013-11-22 03:16:48.129088 getOrder(): Valor do tonce invalido.
+2013-11-22 03:16:59.491690 getOrder(): Valor do tonce invalido.
+2013-11-22 03:17:18.775354 getOrder(): Valor do tonce invalido.
+2013-11-22 03:17:40.094155 getOrder(): Valor do tonce invalido.
+2013-11-22 03:17:59.940581 getOrder(): Valor do tonce invalido.
+2013-11-22 03:18:19.206766 getOrder(): Valor do tonce invalido.
+2013-11-22 03:18:39.253450 getOrder(): Valor do tonce invalido.
+2013-11-22 03:18:59.482188 getOrder(): Valor do tonce invalido.
+2013-11-22 03:19:18.975407 getOrder(): Valor do tonce invalido.
+2013-11-22 03:19:39.245947 getOrder(): Valor do tonce invalido.
+2013-11-22 03:19:59.117289 getOrder(): Valor do tonce invalido.
+2013-11-22 03:20:17.419376 getOrder(): Valor do tonce invalido.
+2013-11-22 03:20:37.429990 getOrder(): Valor do tonce invalido.
+2013-11-22 03:20:58.882344 getOrder(): Valor do tonce invalido.
+2013-11-22 03:21:19.033521 getOrder(): Valor do tonce invalido.
+2013-11-22 03:21:37.571108 getOrder(): Valor do tonce invalido.
+2013-11-22 03:22:00.126982 getOrder(): Valor do tonce invalido.
+2013-11-22 03:22:17.479258 getOrder(): Valor do tonce invalido.
+2013-11-22 03:22:42.718459 getOrder(): Valor do tonce invalido.
+2013-11-22 03:22:57.528581 getOrder(): Valor do tonce invalido.
+2013-11-22 03:23:17.492851 getOrder(): Valor do tonce invalido.
+2013-11-22 03:23:37.556945 getOrder(): Valor do tonce invalido.
+2013-11-22 03:23:57.543563 getOrder(): Valor do tonce invalido.
+2013-11-22 03:24:17.561904 getOrder(): Valor do tonce invalido.
+2013-11-22 03:24:37.610756 getOrder(): Valor do tonce invalido.
+2013-11-22 03:24:57.590726 getOrder(): Valor do tonce invalido.
+2013-11-22 03:25:17.614707 getOrder(): Valor do tonce invalido.
+2013-11-22 03:25:37.594938 getOrder(): Valor do tonce invalido.
+2013-11-22 03:25:57.624966 getOrder(): Valor do tonce invalido.
+2013-11-22 03:26:19.979810 getOrder(): Valor do tonce invalido.
+2013-11-22 03:26:37.668013 getOrder(): Valor do tonce invalido.
+2013-11-22 03:26:57.696577 getOrder(): Valor do tonce invalido.
+2013-11-22 03:27:19.062008 getOrder(): Valor do tonce invalido.
+2013-11-22 03:27:37.658756 getOrder(): Valor do tonce invalido.
+2013-11-22 03:27:57.701663 getOrder(): Valor do tonce invalido.
+2013-11-22 03:28:17.706564 getOrder(): Valor do tonce invalido.
+2013-11-22 03:28:39.038346 getOrder(): Valor do tonce invalido.
+2013-11-22 03:28:57.721337 getOrder(): Valor do tonce invalido.
+2013-11-22 03:29:17.725167 getOrder(): Valor do tonce invalido.
+2013-11-22 03:29:37.726440 getOrder(): Valor do tonce invalido.
+2013-11-22 03:29:57.704473 getOrder(): Valor do tonce invalido.
+2013-11-22 03:30:17.750392 getOrder(): Valor do tonce invalido.
+2013-11-22 03:30:37.730035 getOrder(): Valor do tonce invalido.
+2013-11-22 03:30:57.790250 getOrder(): Valor do tonce invalido.
+2013-11-22 03:31:17.787531 getOrder(): Valor do tonce invalido.
+2013-11-22 03:31:37.776491 getOrder(): Valor do tonce invalido.
+2013-11-22 03:31:57.816941 getOrder(): Valor do tonce invalido.
+2013-11-22 03:32:17.787592 getOrder(): Valor do tonce invalido.
+2013-11-22 03:32:37.789938 getOrder(): Valor do tonce invalido.
+2013-11-22 03:32:57.791903 getOrder(): Valor do tonce invalido.
+2013-11-22 03:33:17.829254 getOrder(): Valor do tonce invalido.
+2013-11-22 03:33:37.845435 getOrder(): Valor do tonce invalido.
+2013-11-22 03:33:57.849716 getOrder(): Valor do tonce invalido.
+2013-11-22 03:34:17.929989 getOrder(): Valor do tonce invalido.
+2013-11-22 03:34:37.850251 getOrder(): Valor do tonce invalido.
+2013-11-22 03:34:57.890405 getOrder(): Valor do tonce invalido.
+2013-11-22 03:35:17.909326 getOrder(): Valor do tonce invalido.
+2013-11-22 03:35:37.909277 getOrder(): Valor do tonce invalido.
+2013-11-22 03:35:57.924626 getOrder(): Valor do tonce invalido.
+2013-11-22 03:36:17.903209 getOrder(): Valor do tonce invalido.
+2013-11-22 03:36:37.913917 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:36:37.914698 ID: 1    DEAD  $:20.0  M:0.0  P:0.0
+2013-11-22 03:36:37.915092 ID: 1    Clearing Orders...
+2013-11-22 03:36:57.932763 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:37:17.979901 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:37:37.959720 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:37:57.948233 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:38:17.988865 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:38:37.950590 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:38:58.037677 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:39:18.049717 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:39:38.051497 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:39:58.051777 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:40:18.075317 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:40:38.061758 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:40:58.073659 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:41:18.133999 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:41:38.092812 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:41:58.091600 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:42:18.169610 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:42:38.111268 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:42:58.216879 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:43:18.150022 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:43:38.417292 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:43:58.204825 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:44:18.165335 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:44:38.180273 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:44:58.150763 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:45:18.182080 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:45:38.205635 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:46:01.376244 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:46:19.191610 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:46:38.222746 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:46:58.240614 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:47:18.232996 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:47:38.902461 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:47:59.904077 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:48:18.253231 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:48:38.264723 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:48:58.271889 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:49:18.320848 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:49:38.318793 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:49:58.355762 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:50:18.403251 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:50:39.868204 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:50:58.351644 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:51:18.361210 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:51:38.379925 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:51:58.387225 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:52:18.404646 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:52:38.407311 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:52:58.470171 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:53:18.480187 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:53:38.437610 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:53:58.458603 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:54:18.468539 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:54:38.487147 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:54:58.468150 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:55:18.476310 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:55:38.501588 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:55:58.528011 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:56:18.553820 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:56:38.564512 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:56:58.566679 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:57:18.531603 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:57:38.579026 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:57:58.588607 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:58:18.584547 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:58:38.620601 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:58:58.602605 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:59:18.587922 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:59:38.583227 cancelOrder(): Valor do tonce invalido.
+2013-11-22 03:59:58.647071 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:00:18.613581 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:00:38.625073 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:00:59.513974 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:01:19.766007 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:01:39.751904 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:01:58.667137 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:02:18.645683 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:02:38.672698 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:02:58.669215 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:03:18.670501 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:03:38.722393 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:03:59.456070 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:04:18.914605 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:04:38.770872 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:04:59.216642 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:05:18.786778 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:05:38.799137 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:05:58.809087 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:06:18.785666 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:06:38.814323 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:07:00.292831 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:07:18.819636 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:07:38.829560 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:07:58.839985 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:08:18.856896 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:08:38.888250 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:08:58.870684 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:09:18.894175 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:09:38.870580 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:09:58.883158 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:10:18.927643 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:10:38.925888 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:10:59.207345 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:11:18.901025 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:11:39.903503 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:11:58.915908 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:12:18.938209 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:12:39.061672 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:13:00.308235 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:13:19.039011 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:13:39.326837 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:13:59.015368 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:14:20.152131 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:14:40.875882 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:14:59.013871 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:15:19.023967 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:15:49.804219 cancelOrder(): Valor do tonce invalido.
+2013-11-22 04:15:59.091930 ID: 1    ---- CANCEL ID: 50297
+2013-11-22 04:16:39.948931 getOrder(): Valor do tonce invalido.
+2013-11-22 10:27:05.087389 ID: 1    Started
+2013-11-22 10:27:05.114505 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 10:27:27.596534 putOrder(): Valor do tonce invalido.
+2013-11-22 10:27:46.831001 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:28:06.880868 putOrder(): Valor do tonce invalido.
+2013-11-22 10:28:26.892768 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:28:46.901997 putOrder(): Valor do tonce invalido.
+2013-11-22 10:29:08.959410 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:29:31.178970 putOrder(): Valor do tonce invalido.
+2013-11-22 10:29:46.873007 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:30:09.258124 putOrder(): Valor do tonce invalido.
+2013-11-22 10:30:28.894283 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:30:46.914747 putOrder(): Valor do tonce invalido.
+2013-11-22 10:31:06.921626 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:31:29.933307 putOrder(): Valor do tonce invalido.
+2013-11-22 10:31:47.948413 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:32:06.972538 putOrder(): Valor do tonce invalido.
+2013-11-22 10:32:32.942004 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:32:54.592839 putOrder(): Valor do tonce invalido.
+2013-11-22 10:33:13.589728 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:33:37.051835 putOrder(): Valor do tonce invalido.
+2013-11-22 10:34:07.235017 ID: 1    ++++ PUT ID: 50446 buy 0.0109488072096 1826.683
+2013-11-22 10:34:07.236157 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-22 10:34:27.075001 getOrder(): Valor do tonce invalido.
+2013-11-22 10:34:47.012646 getOrder(): Valor do tonce invalido.
+2013-11-22 10:35:07.123166 getOrder(): Valor do tonce invalido.
+2013-11-22 10:35:27.050391 getOrder(): Valor do tonce invalido.
+2013-11-22 10:35:47.521243 getOrder(): Valor do tonce invalido.
+2013-11-22 10:36:07.053358 getOrder(): Valor do tonce invalido.
+2013-11-22 10:36:27.086595 getOrder(): Valor do tonce invalido.
+2013-11-22 10:36:47.087730 getOrder(): Valor do tonce invalido.
+2013-11-22 10:37:07.112796 getOrder(): Valor do tonce invalido.
+2013-11-22 10:37:27.107160 getOrder(): Valor do tonce invalido.
+2013-11-22 10:37:47.111919 getOrder(): Valor do tonce invalido.
+2013-11-22 10:38:07.123876 getOrder(): Valor do tonce invalido.
+2013-11-22 10:38:31.234259 getOrder(): Valor do tonce invalido.
+2013-11-22 10:38:47.155478 getOrder(): Valor do tonce invalido.
+2013-11-22 10:39:07.160292 getOrder(): Valor do tonce invalido.
+2013-11-22 10:39:27.146773 getOrder(): Valor do tonce invalido.
+2013-11-22 10:39:47.152972 getOrder(): Valor do tonce invalido.
+2013-11-22 10:40:11.003188 getOrder(): Valor do tonce invalido.
+2013-11-22 10:40:27.166601 getOrder(): Valor do tonce invalido.
+2013-11-22 10:40:47.173877 getOrder(): Valor do tonce invalido.
+2013-11-22 10:41:07.806800 getOrder(): Valor do tonce invalido.
+2013-11-22 10:41:27.207553 getOrder(): Valor do tonce invalido.
+2013-11-22 10:41:47.224459 getOrder(): Valor do tonce invalido.
+2013-11-22 10:42:07.206084 getOrder(): Valor do tonce invalido.
+2013-11-22 10:42:27.296937 getOrder(): Valor do tonce invalido.
+2013-11-22 10:42:47.276653 getOrder(): Valor do tonce invalido.
+2013-11-22 10:43:07.257715 getOrder(): Valor do tonce invalido.
+2013-11-22 10:43:27.561565 getOrder(): Valor do tonce invalido.
+2013-11-22 10:43:47.413984 getOrder(): Valor do tonce invalido.
+2013-11-22 10:44:07.287879 getOrder(): Valor do tonce invalido.
+2013-11-22 10:44:27.290610 getOrder(): Valor do tonce invalido.
+2013-11-22 10:44:47.308837 getOrder(): Valor do tonce invalido.
+2013-11-22 10:45:07.315756 getOrder(): Valor do tonce invalido.
+2013-11-22 10:45:32.188041 getOrder(): Valor do tonce invalido.
+2013-11-22 10:45:47.986232 getOrder(): Valor do tonce invalido.
+2013-11-22 10:46:07.374194 getOrder(): Valor do tonce invalido.
+2013-11-22 10:46:27.367646 getOrder(): Valor do tonce invalido.
+2013-11-22 10:46:47.371087 getOrder(): Valor do tonce invalido.
+2013-11-22 10:47:05.456899 ID: 1    Started
+2013-11-22 10:47:05.462429 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 10:47:27.108647 putOrder(): Valor do tonce invalido.
+2013-11-22 10:47:47.096387 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:48:07.168957 putOrder(): Valor do tonce invalido.
+2013-11-22 10:48:27.130641 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:48:47.131344 putOrder(): Valor do tonce invalido.
+2013-11-22 10:49:07.160275 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:49:27.210840 putOrder(): Valor do tonce invalido.
+2013-11-22 10:49:47.223616 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:50:07.244081 putOrder(): Valor do tonce invalido.
+2013-11-22 10:50:27.202472 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:50:47.258691 putOrder(): Valor do tonce invalido.
+2013-11-22 10:51:08.296967 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:51:27.270242 putOrder(): Valor do tonce invalido.
+2013-11-22 10:51:47.277247 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:52:07.281045 putOrder(): Valor do tonce invalido.
+2013-11-22 10:52:27.283830 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:52:47.325931 putOrder(): Valor do tonce invalido.
+2013-11-22 10:53:07.314876 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:53:27.336411 putOrder(): Valor do tonce invalido.
+2013-11-22 10:53:47.345658 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:54:07.354901 putOrder(): Valor do tonce invalido.
+2013-11-22 10:54:27.323397 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:54:47.536023 putOrder(): Valor do tonce invalido.
+2013-11-22 10:55:07.354469 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:55:27.358739 putOrder(): Valor do tonce invalido.
+2013-11-22 10:55:47.363681 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:56:07.377551 putOrder(): Valor do tonce invalido.
+2013-11-22 10:56:27.389428 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:56:47.381885 putOrder(): Valor do tonce invalido.
+2013-11-22 10:57:07.413607 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:57:27.422480 putOrder(): Valor do tonce invalido.
+2013-11-22 10:57:47.423266 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:58:07.491559 putOrder(): Valor do tonce invalido.
+2013-11-22 10:58:27.454785 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:58:47.505121 putOrder(): Valor do tonce invalido.
+2013-11-22 10:59:07.468477 clampTarget(): Valor do tonce invalido.
+2013-11-22 10:59:34.272014 putOrder(): Valor do tonce invalido.
+2013-11-22 10:59:47.480579 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:00:11.951141 putOrder(): Valor do tonce invalido.
+2013-11-22 11:00:36.940619 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:01:03.667223 putOrder(): Valor do tonce invalido.
+2013-11-22 11:01:15.982635 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:01:30.699775 ID: 1    Started
+2013-11-22 11:01:30.700663 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 11:01:59.018962 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:02:33.769368 putOrder(): Valor do tonce invalido.
+2013-11-22 11:03:25.991144 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:04:03.202669 putOrder(): Valor do tonce invalido.
+2013-11-22 11:05:08.636865 putOrder(): Valor do tonce invalido.
+2013-11-22 11:05:48.633905 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:06:28.643772 putOrder(): Valor do tonce invalido.
+2013-11-22 11:07:08.700756 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:07:48.634649 putOrder(): Valor do tonce invalido.
+2013-11-22 11:08:28.714492 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:09:08.733321 putOrder(): Valor do tonce invalido.
+2013-11-22 11:11:12.841223 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:12:58.725466 putOrder(): Valor do tonce invalido.
+2013-11-22 11:16:14.009675 clampTarget(): Valor do tonce invalido.
+2013-11-22 11:16:17.499131 ID: 1    ++++ PUT ID: 50484 buy 0.0109491634872 1826.6235611
+2013-11-22 11:16:17.500301 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-22 11:16:55.135235 getOrder(): Valor do tonce invalido.
+2013-11-22 11:17:35.139937 getOrder(): Valor do tonce invalido.
+2013-11-22 11:18:16.156011 getOrder(): Valor do tonce invalido.
+2013-11-22 11:18:55.293223 getOrder(): Valor do tonce invalido.
+2013-11-22 11:19:35.179632 getOrder(): Valor do tonce invalido.
+2013-11-22 11:20:15.179180 getOrder(): Valor do tonce invalido.
+2013-11-22 11:20:55.144851 getOrder(): Valor do tonce invalido.
+2013-11-22 11:21:35.186733 getOrder(): Valor do tonce invalido.
+2013-11-22 11:22:16.425884 getOrder(): Valor do tonce invalido.
+2013-11-22 11:22:55.207501 getOrder(): Valor do tonce invalido.
+2013-11-22 11:23:35.217725 getOrder(): Valor do tonce invalido.
+2013-11-22 11:24:15.229678 getOrder(): Valor do tonce invalido.
+2013-11-22 11:24:55.629985 getOrder(): Valor do tonce invalido.
+2013-11-22 11:25:35.272143 getOrder(): Valor do tonce invalido.
+2013-11-22 11:26:15.293076 getOrder(): Valor do tonce invalido.
+2013-11-22 11:26:55.802669 getOrder(): Valor do tonce invalido.
+2013-11-22 11:27:35.253096 getOrder(): Valor do tonce invalido.
+2013-11-22 11:28:15.274043 getOrder(): Valor do tonce invalido.
+2013-11-22 11:28:55.286550 getOrder(): Valor do tonce invalido.
+2013-11-22 11:29:35.279182 getOrder(): Valor do tonce invalido.
+2013-11-22 11:30:17.558186 getOrder(): Valor do tonce invalido.
+2013-11-22 11:30:56.667317 getOrder(): Valor do tonce invalido.
+2013-11-22 11:31:37.169397 getOrder(): Valor do tonce invalido.
+2013-11-22 11:32:19.569205 getOrder(): Valor do tonce invalido.
+2013-11-22 11:32:58.720199 getOrder(): Valor do tonce invalido.
+2013-11-22 11:33:50.067154 getOrder(): Valor do tonce invalido.
+2013-11-22 11:34:21.208194 getOrder(): Valor do tonce invalido.
+2013-11-22 11:34:57.488883 getOrder(): Valor do tonce invalido.
+2013-11-22 11:35:36.727723 getOrder(): Valor do tonce invalido.
+2013-11-22 11:36:16.873167 getOrder(): Valor do tonce invalido.
+2013-11-22 11:36:59.036093 getOrder(): Valor do tonce invalido.
+2013-11-22 11:37:38.612978 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:37:38.614137 ID: 1    DEAD  $:20.0  M:0.0  P:0.0
+2013-11-22 11:37:38.614562 ID: 1    Clearing Orders...
+2013-11-22 11:38:16.909951 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:38:57.115857 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:39:37.322700 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:40:17.259103 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:40:57.563488 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:41:35.497321 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:42:15.881635 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:42:55.468663 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:43:35.511424 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:44:15.538927 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:44:55.508252 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:45:35.590350 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:46:16.716948 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:46:57.117753 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:47:37.269050 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:48:17.768693 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:48:56.903991 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:49:37.048105 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:50:17.791955 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:50:57.345734 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:51:36.458556 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:52:15.630893 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:52:55.650882 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:53:37.007632 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:54:15.655475 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:54:55.698050 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:55:35.672439 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:56:15.775890 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:56:55.759074 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:57:36.658026 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:58:21.237471 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:59:06.619017 cancelOrder(): Valor do tonce invalido.
+2013-11-22 11:59:40.795860 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:00:18.841104 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:00:57.725656 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:01:38.842253 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:02:21.642958 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:02:57.618156 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:03:37.563847 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:04:17.611681 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:04:57.771345 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:05:37.533284 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:06:17.348220 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:06:57.901208 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:07:35.894670 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:08:15.944885 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:09:01.208305 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:09:35.890357 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:10:18.130182 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:10:55.927616 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:11:35.921634 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:12:15.896000 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:12:57.471256 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:13:37.237317 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:14:17.648208 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:14:58.975081 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:15:50.181629 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:16:21.730445 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:16:57.417039 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:17:37.817338 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:18:16.075246 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:18:56.025412 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:19:36.033882 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:20:16.545291 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:20:56.066349 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:21:36.045303 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:22:16.040546 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:22:56.041246 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:23:36.118040 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:24:16.089688 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:24:56.105090 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:25:36.111789 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:26:16.193638 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:26:58.236860 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:27:37.695432 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:28:17.514704 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:28:56.192988 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:29:36.170528 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:30:16.170082 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:30:56.221644 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:31:36.240830 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:32:16.205217 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:32:56.215695 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:33:36.228460 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:34:16.294557 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:34:56.261642 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:35:36.328270 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:36:17.167594 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:36:56.346550 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:37:36.266215 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:38:16.318989 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:38:56.284193 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:39:36.292271 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:40:16.355195 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:40:56.313071 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:41:36.339670 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:42:16.344834 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:42:56.369622 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:43:36.369601 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:44:16.379869 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:44:56.366392 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:45:36.358835 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:46:16.358583 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:46:56.385476 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:47:36.360609 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:48:16.594447 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:49:01.424483 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:49:36.461419 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:50:16.455586 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:50:56.475131 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:51:37.513794 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:52:16.475589 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:52:56.503992 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:53:36.547370 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:54:16.529198 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:54:56.542139 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:55:36.656538 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:56:17.333975 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:56:56.501218 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:57:36.531086 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:58:20.195065 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:58:57.614445 cancelOrder(): Valor do tonce invalido.
+2013-11-22 12:59:36.933081 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:00:17.198125 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:00:56.594618 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:01:39.290965 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:02:16.594672 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:03:01.699608 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:03:37.111992 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:04:22.277704 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:04:56.637434 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:05:36.669415 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:06:16.692132 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:06:56.675724 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:07:38.257186 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:08:16.694928 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:08:56.718543 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:09:36.703311 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:10:16.710011 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:10:56.740880 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:11:40.406987 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:12:18.128623 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:12:56.754838 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:13:37.099373 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:14:16.800680 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:14:56.955456 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:15:50.682204 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:16:22.550603 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:16:57.897221 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:17:36.950008 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:18:17.422752 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:18:56.969678 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:19:37.104706 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:20:17.329877 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:20:57.383400 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:21:37.582512 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:22:17.387723 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:22:56.953351 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:23:36.956695 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:24:17.005520 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:24:56.924841 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:25:36.986226 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:26:16.996814 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:26:57.018428 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:27:36.980261 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:28:17.004250 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:29:01.129676 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:29:40.331503 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:30:18.356581 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:30:57.379661 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:31:41.406276 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:32:17.644499 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:33:00.592976 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:33:37.174857 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:34:17.167438 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:34:58.962372 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:35:38.044848 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:36:18.704850 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:36:57.164519 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:37:38.897083 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:38:19.952202 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:38:57.133955 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:39:40.087846 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:40:17.221272 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:40:57.198132 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:41:37.204466 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:42:17.232582 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:42:57.236696 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:43:38.130223 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:44:18.498496 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:44:57.985785 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:45:37.435362 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:46:17.423202 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:46:57.433807 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:47:37.334755 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:48:17.611435 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:48:57.317406 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:49:37.385597 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:50:17.361820 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:50:58.247675 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:51:37.581012 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:52:17.762509 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:52:58.256279 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:53:37.806917 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:54:20.130405 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:54:57.464674 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:55:41.397418 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:56:17.563799 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:56:57.513057 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:57:37.574448 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:58:19.412140 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:59:01.674728 cancelOrder(): Valor do tonce invalido.
+2013-11-22 13:59:38.625639 cancelOrder(): Valor do tonce invalido.
+2013-11-22 14:00:18.306332 cancelOrder(): Valor do tonce invalido.
+2013-11-22 14:00:57.895317 cancelOrder(): Valor do tonce invalido.
+2013-11-22 14:01:38.073591 cancelOrder(): Valor do tonce invalido.
+2013-11-22 14:01:58.187298 ID: 1    Started
+2013-11-22 14:01:58.188583 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 14:02:40.602627 putOrder(): Valor do tonce invalido.
+2013-11-22 14:03:20.420537 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:03:34.255007 ID: 1    Started
+2013-11-22 14:03:34.256253 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 14:04:17.016155 putOrder(): Valor do tonce invalido.
+2013-11-22 14:04:59.109983 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:05:38.029180 putOrder(): Valor do tonce invalido.
+2013-11-22 14:06:21.026943 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:07:00.141801 putOrder(): Valor do tonce invalido.
+2013-11-22 14:07:37.195911 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:08:20.245706 putOrder(): Valor do tonce invalido.
+2013-11-22 14:08:56.089821 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:09:37.765843 putOrder(): Valor do tonce invalido.
+2013-11-22 14:10:16.209023 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:10:56.079472 putOrder(): Valor do tonce invalido.
+2013-11-22 14:11:37.991399 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:12:16.163786 putOrder(): Valor do tonce invalido.
+2013-11-22 14:12:56.157175 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:13:36.188497 putOrder(): Valor do tonce invalido.
+2013-11-22 14:14:16.164414 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:14:56.136134 putOrder(): Valor do tonce invalido.
+2013-11-22 14:15:36.169475 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:16:16.157411 putOrder(): Valor do tonce invalido.
+2013-11-22 14:16:57.833996 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:17:36.154246 putOrder(): Valor do tonce invalido.
+2013-11-22 14:18:16.263934 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:18:59.185263 putOrder(): Valor do tonce invalido.
+2013-11-22 14:19:37.171135 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:20:16.297045 putOrder(): Valor do tonce invalido.
+2013-11-22 14:20:57.394228 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:21:36.300776 putOrder(): Valor do tonce invalido.
+2013-11-22 14:22:19.505910 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:22:56.314266 putOrder(): Valor do tonce invalido.
+2013-11-22 14:23:36.379114 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:24:16.294862 putOrder(): Valor do tonce invalido.
+2013-11-22 14:24:57.343198 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:25:36.343682 putOrder(): Valor do tonce invalido.
+2013-11-22 14:26:16.317006 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:26:56.370625 putOrder(): Valor do tonce invalido.
+2013-11-22 14:27:36.330289 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:28:16.394959 putOrder(): Valor do tonce invalido.
+2013-11-22 14:28:56.423129 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:29:36.413996 putOrder(): Valor do tonce invalido.
+2013-11-22 14:30:16.364601 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:30:56.356058 putOrder(): Valor do tonce invalido.
+2013-11-22 14:31:36.419545 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:32:16.409439 putOrder(): Valor do tonce invalido.
+2013-11-22 14:32:56.383615 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:33:36.439024 putOrder(): Valor do tonce invalido.
+2013-11-22 14:34:16.421402 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:34:56.406255 putOrder(): Valor do tonce invalido.
+2013-11-22 14:35:36.488079 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:36:16.496997 putOrder(): Valor do tonce invalido.
+2013-11-22 14:36:56.494805 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:37:36.489240 putOrder(): Valor do tonce invalido.
+2013-11-22 14:38:16.717463 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:38:56.465001 putOrder(): Valor do tonce invalido.
+2013-11-22 14:39:36.500780 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:40:16.492411 putOrder(): Valor do tonce invalido.
+2013-11-22 14:40:58.496271 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:41:36.825849 putOrder(): Valor do tonce invalido.
+2013-11-22 14:42:16.654762 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:42:56.638121 putOrder(): Valor do tonce invalido.
+2013-11-22 14:43:37.282558 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:44:19.499130 putOrder(): Valor do tonce invalido.
+2013-11-22 14:44:56.608243 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:45:36.644481 putOrder(): Valor do tonce invalido.
+2013-11-22 14:46:16.657799 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:46:56.593310 putOrder(): Valor do tonce invalido.
+2013-11-22 14:47:36.912302 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:48:16.626523 putOrder(): Valor do tonce invalido.
+2013-11-22 14:48:56.952589 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:49:37.439062 putOrder(): Valor do tonce invalido.
+2013-11-22 14:50:16.736997 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:51:00.715459 putOrder(): Valor do tonce invalido.
+2013-11-22 14:51:38.282961 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:52:19.012335 putOrder(): Valor do tonce invalido.
+2013-11-22 14:52:58.140630 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:53:39.784207 putOrder(): Valor do tonce invalido.
+2013-11-22 14:54:18.006606 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:54:57.506988 putOrder(): Valor do tonce invalido.
+2013-11-22 14:55:36.714727 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:56:16.697094 putOrder(): Valor do tonce invalido.
+2013-11-22 14:56:56.698790 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:57:36.774325 putOrder(): Valor do tonce invalido.
+2013-11-22 14:58:16.722755 clampTarget(): Valor do tonce invalido.
+2013-11-22 14:58:56.795717 putOrder(): Valor do tonce invalido.
+2013-11-22 14:59:36.809820 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:00:16.739587 putOrder(): Valor do tonce invalido.
+2013-11-22 15:00:56.976185 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:01:37.274645 putOrder(): Valor do tonce invalido.
+2013-11-22 15:02:19.402030 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:03:01.224920 putOrder(): Valor do tonce invalido.
+2013-11-22 15:03:36.889697 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:04:23.144955 putOrder(): Valor do tonce invalido.
+2013-11-22 15:04:56.929082 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:05:37.520856 putOrder(): Valor do tonce invalido.
+2013-11-22 15:06:16.879333 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:06:57.699031 putOrder(): Valor do tonce invalido.
+2013-11-22 15:07:38.125151 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:08:16.931102 putOrder(): Valor do tonce invalido.
+2013-11-22 15:08:57.598298 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:09:36.935307 putOrder(): Valor do tonce invalido.
+2013-11-22 15:10:16.996585 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:10:56.973334 putOrder(): Valor do tonce invalido.
+2013-11-22 15:11:37.001959 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:12:20.109050 putOrder(): Valor do tonce invalido.
+2013-11-22 15:12:58.452365 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:13:38.591341 putOrder(): Valor do tonce invalido.
+2013-11-22 15:14:17.084291 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:14:57.989109 putOrder(): Valor do tonce invalido.
+2013-11-22 15:15:41.168232 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:16:17.784938 putOrder(): Valor do tonce invalido.
+2013-11-22 15:16:57.747626 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:17:37.014282 putOrder(): Valor do tonce invalido.
+2013-11-22 15:18:17.074594 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:18:57.015815 putOrder(): Valor do tonce invalido.
+2013-11-22 15:19:37.042802 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:20:17.032970 putOrder(): Valor do tonce invalido.
+2013-11-22 15:20:57.124658 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:21:37.161527 putOrder(): Valor do tonce invalido.
+2013-11-22 15:22:21.845918 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:22:57.194701 putOrder(): Valor do tonce invalido.
+2013-11-22 15:23:37.892940 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:24:17.205740 putOrder(): Valor do tonce invalido.
+2013-11-22 15:24:57.323604 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:25:37.463932 putOrder(): Valor do tonce invalido.
+2013-11-22 15:26:20.239198 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:26:58.655860 putOrder(): Valor do tonce invalido.
+2013-11-22 15:27:40.525726 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:28:18.145057 putOrder(): Valor do tonce invalido.
+2013-11-22 15:28:58.327386 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:29:38.400407 putOrder(): Valor do tonce invalido.
+2013-11-22 15:30:18.162925 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:30:58.042280 putOrder(): Valor do tonce invalido.
+2013-11-22 15:31:37.843823 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:32:17.481621 putOrder(): Valor do tonce invalido.
+2013-11-22 15:32:57.231230 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:33:37.239695 putOrder(): Valor do tonce invalido.
+2013-11-22 15:34:19.566234 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:34:57.297212 putOrder(): Valor do tonce invalido.
+2013-11-22 15:35:37.243369 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:36:17.272554 putOrder(): Valor do tonce invalido.
+2013-11-22 15:36:57.282679 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:37:37.312293 putOrder(): Valor do tonce invalido.
+2013-11-22 15:38:17.346186 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:38:57.331631 putOrder(): Valor do tonce invalido.
+2013-11-22 15:39:37.333467 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:40:17.359815 putOrder(): Valor do tonce invalido.
+2013-11-22 15:40:57.364970 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:41:37.357074 putOrder(): Valor do tonce invalido.
+2013-11-22 15:42:20.791074 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:42:57.379946 putOrder(): Valor do tonce invalido.
+2013-11-22 15:43:37.409463 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:44:17.384969 putOrder(): Valor do tonce invalido.
+2013-11-22 15:44:57.497635 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:45:37.806394 putOrder(): Valor do tonce invalido.
+2013-11-22 15:46:17.464349 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:46:57.479031 putOrder(): Valor do tonce invalido.
+2013-11-22 15:47:37.481799 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:48:17.467651 putOrder(): Valor do tonce invalido.
+2013-11-22 15:48:57.500612 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:49:37.834405 putOrder(): Valor do tonce invalido.
+2013-11-22 15:50:17.503935 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:50:57.692219 putOrder(): Valor do tonce invalido.
+2013-11-22 15:51:37.554884 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:52:17.543662 putOrder(): Valor do tonce invalido.
+2013-11-22 15:52:57.578442 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:53:37.590701 putOrder(): Valor do tonce invalido.
+2013-11-22 15:54:17.558797 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:54:57.589660 putOrder(): Valor do tonce invalido.
+2013-11-22 15:55:37.603087 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:56:17.666869 putOrder(): Valor do tonce invalido.
+2013-11-22 15:56:57.599027 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:57:37.623923 putOrder(): Valor do tonce invalido.
+2013-11-22 15:58:17.564138 clampTarget(): Valor do tonce invalido.
+2013-11-22 15:58:58.004724 putOrder(): Valor do tonce invalido.
+2013-11-22 15:59:37.887238 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:00:17.625374 putOrder(): Valor do tonce invalido.
+2013-11-22 16:00:57.657959 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:01:37.646806 putOrder(): Valor do tonce invalido.
+2013-11-22 16:02:17.695152 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:02:58.817816 putOrder(): Valor do tonce invalido.
+2013-11-22 16:03:37.684248 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:04:17.691517 putOrder(): Valor do tonce invalido.
+2013-11-22 16:04:57.773157 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:05:37.907518 putOrder(): Valor do tonce invalido.
+2013-11-22 16:06:55.978938 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:07:22.186648 putOrder(): Valor do tonce invalido.
+2013-11-22 16:08:43.019349 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:09:23.103347 putOrder(): Valor do tonce invalido.
+2013-11-22 16:10:40.872095 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:11:11.493318 putOrder(): Valor do tonce invalido.
+2013-11-22 16:11:29.217977 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:12:09.230969 putOrder(): Valor do tonce invalido.
+2013-11-22 16:12:49.293608 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:13:29.213684 putOrder(): Valor do tonce invalido.
+2013-11-22 16:14:09.240604 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:14:49.610088 putOrder(): Valor do tonce invalido.
+2013-11-22 16:15:29.276614 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:16:09.268837 putOrder(): Valor do tonce invalido.
+2013-11-22 16:16:52.816948 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:17:32.549886 putOrder(): Valor do tonce invalido.
+2013-11-22 16:18:20.753113 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:19:09.125839 putOrder(): Valor do tonce invalido.
+2013-11-22 16:20:00.983979 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:20:59.896115 putOrder(): Valor do tonce invalido.
+2013-11-22 16:22:48.211453 putOrder(): Valor do tonce invalido.
+2013-11-22 16:23:28.160450 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:24:08.209280 putOrder(): Valor do tonce invalido.
+2013-11-22 16:24:48.225480 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:25:28.191280 putOrder(): Valor do tonce invalido.
+2013-11-22 16:26:08.226333 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:26:48.199680 putOrder(): Valor do tonce invalido.
+2013-11-22 16:27:28.219338 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:28:08.209957 putOrder(): Valor do tonce invalido.
+2013-11-22 16:28:48.256990 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:29:28.232040 putOrder(): Valor do tonce invalido.
+2013-11-22 16:30:08.293291 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:30:48.264507 putOrder(): Valor do tonce invalido.
+2013-11-22 16:31:28.246506 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:32:08.308941 putOrder(): Valor do tonce invalido.
+2013-11-22 16:32:48.313001 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:33:32.586172 putOrder(): Valor do tonce invalido.
+2013-11-22 16:34:08.364391 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:34:48.348505 putOrder(): Valor do tonce invalido.
+2013-11-22 16:35:29.051687 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:36:08.374165 putOrder(): Valor do tonce invalido.
+2013-11-22 16:36:48.357300 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:37:28.422097 putOrder(): Valor do tonce invalido.
+2013-11-22 16:38:08.328401 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:38:48.383023 putOrder(): Valor do tonce invalido.
+2013-11-22 16:39:28.370064 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:40:08.471794 putOrder(): Valor do tonce invalido.
+2013-11-22 16:40:49.670482 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:41:29.150206 putOrder(): Valor do tonce invalido.
+2013-11-22 16:42:08.585739 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:43:54.322159 putOrder(): Valor do tonce invalido.
+2013-11-22 16:46:03.497159 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:47:07.362028 putOrder(): Valor do tonce invalido.
+2013-11-22 16:47:53.586522 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:48:15.885851 putOrder(): Valor do tonce invalido.
+2013-11-22 16:48:54.770337 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:49:35.552933 putOrder(): Valor do tonce invalido.
+2013-11-22 16:50:14.059539 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:50:54.940967 putOrder(): Valor do tonce invalido.
+2013-11-22 16:51:34.708541 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:52:15.342742 putOrder(): Valor do tonce invalido.
+2013-11-22 16:52:55.724148 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:53:00.362112 ID: 1    Started
+2013-11-22 16:53:00.363472 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 16:53:43.155451 putOrder(): Valor do tonce invalido.
+2013-11-22 16:54:25.133523 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:55:04.950939 putOrder(): Valor do tonce invalido.
+2013-11-22 16:55:44.688382 clampTarget(): Valor do tonce invalido.
+2013-11-22 16:56:56.959777 ID: 1    Started
+2013-11-22 16:56:56.963075 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 16:57:50.819692 ID: 1    ++++ PUT ID: 50804 buy 0.010699707363 1869.21
+2013-11-22 16:57:50.820833 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-22 16:58:22.486491 ID: 1    LONG  $:0.15203795  M:0.01062481203  P:1869.21
+2013-11-22 16:59:41.138157 ID: 1    ++++ PUT ID: 50812 sell -0.01062481203 1889.77131
+2013-11-22 16:59:41.143421 ID: 1    ASK  $:0.15203795  M:0.01062481203  P:1869.21
+2013-11-22 17:08:24.670424 ID: 1    SHORT  $:20.1702636789  M:2.02999999969e-09  P:1869.21
+2013-11-22 17:09:47.176307 ID: 1    ++++ PUT ID: 50836 buy 0.0107623241828 1874.155
+2013-11-22 17:09:47.177498 ID: 1    BID  $:20.1702636789  M:2.02999999969e-09  P:1869.21
+2013-11-22 17:15:50.898506 getOrder(): Valor do tonce invalido.
+2013-11-22 17:16:41.731075 getOrder(): Valor do tonce invalido.
+2013-11-22 17:17:20.355405 getOrder(): Valor do tonce invalido.
+2013-11-22 17:17:59.761702 getOrder(): Valor do tonce invalido.
+2013-11-22 17:18:36.047609 getOrder(): Valor do tonce invalido.
+2013-11-22 17:19:16.730178 getOrder(): Valor do tonce invalido.
+2013-11-22 17:26:22.830973 ID: 1    LONG  $:7.83926449799e-06  M:0.01073003507  P:1874.15499906
+2013-11-22 17:28:03.629315 ID: 1    ++++ PUT ID: 50855 sell -0.01073003507 1894.77070405
+2013-11-22 17:28:03.630522 ID: 1    ASK  $:7.83926449799e-06  M:0.01073003507  P:1874.15499906
+2013-11-22 17:28:22.957578 ID: 1    SHORT  $:20.2260478281  M:-4.93000000025e-09  P:0.0
+2013-11-22 17:29:42.593227 ID: 1    ++++ PUT ID: 50856 buy 0.0107734417085 1877.39892
+2013-11-22 17:29:42.594401 ID: 1    BID  $:20.2260478281  M:-4.93000000025e-09  P:0.0
+2013-11-22 17:32:22.846260 ID: 1    LONG  $:3.2074612939e-06  M:0.01074111475  P:1877.3997817
+2013-11-22 17:33:44.417665 ID: 1    ++++ PUT ID: 50868 sell -0.01074111475 1898.05117929
+2013-11-22 17:33:44.418838 ID: 1    ASK  $:3.2074612939e-06  M:0.01074111475  P:1877.3997817
+2013-11-22 17:50:40.027601 getOrder(): Valor do tonce invalido.
+2013-11-22 17:53:43.513412 getOrder(): Valor do tonce invalido.
+2013-11-22 17:54:23.057361 getOrder(): Valor do tonce invalido.
+2013-11-22 18:00:26.579687 getOrder(): Valor do tonce invalido.
+2013-11-22 18:01:25.730197 getOrder(): Valor do tonce invalido.
+2013-11-22 18:08:18.238977 getOrder(): Valor do tonce invalido.
+2013-11-22 18:08:36.535801 getOrder(): Valor do tonce invalido.
+2013-11-22 18:35:05.770966 ID: 1    ---- CANCEL ID: 50868
+2013-11-22 18:35:47.257990 ID: 1    LONG  $:3.2074612939e-06  M:0.01074111475  P:1877.3997817
+2013-11-22 18:37:00.426476 ID: 1    ++++ PUT ID: 50967 sell -0.01074111475 1898.05117929
+2013-11-22 18:37:00.430015 ID: 1    ASK  $:3.2074612939e-06  M:0.01074111475  P:1877.3997817
+2013-11-22 21:27:35.437827 ID: 1    Started
+2013-11-22 21:27:35.447339 ID: 1    SHORT  $:20.0  M:0.0  P:0.0
+2013-11-22 21:28:29.528760 ID: 1    ++++ PUT ID: 51160 buy 0.0103811323276 1926.57210879
+2013-11-22 21:28:29.532419 ID: 1    BID  $:20.0  M:0.0  P:0.0
+2013-11-22 21:35:47.275932 ID: 1    LONG  $:4.47171569817e-06  M:0.01034998661  P:1926.57210879
+2013-11-22 21:37:02.108903 ID: 1    ++++ PUT ID: 51182 sell -0.01034998661 1947.76440199
+2013-11-22 21:37:02.112510 ID: 1    ASK  $:4.47171569817e-06  M:0.01034998661  P:1926.57210879
+2013-11-22 21:52:35.623492 getOrder(): Valor do tonce invalido.
+2013-11-22 21:54:45.207763 ID: 1    SHORT  $:20.0988685079  M:-3.38999999946e-09  P:0.0
+2013-11-22 21:56:12.162614 putOrder(): Valor do tonce invalido.
+2013-11-22 21:57:20.025879 ID: 1    ++++ PUT ID: 51204 buy 0.0104217513198 1928.55
+2013-11-22 21:57:20.029440 ID: 1    BID  $:20.0988685079  M:-3.38999999946e-09  P:0.0
+2013-11-22 21:59:58.961698 ID: 1    LONG  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-22 22:00:51.991696 clampTarget(): Valor do tonce invalido.
+2013-11-22 22:01:17.386315 ID: 1    ++++ PUT ID: 51215 sell -0.01039048136 1949.76468613
+2013-11-22 22:01:17.389944 ID: 1    ASK  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-22 22:11:26.927767 getOrder(): Valor do tonce invalido.
+2013-11-22 22:14:16.483588 getOrder(): Valor do tonce invalido.
+2013-11-22 22:16:54.413894 getOrder(): Valor do tonce invalido.
+2013-11-22 23:02:36.962501 ID: 1    ---- CANCEL ID: 51215
+2013-11-22 23:03:18.525036 ID: 1    LONG  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-22 23:04:37.241853 ID: 1    ++++ PUT ID: 51292 sell -0.01039048136 1949.76468613
+2013-11-22 23:04:37.245507 ID: 1    ASK  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-22 23:13:33.161004 getOrder(): Valor do tonce invalido.
+2013-11-22 23:16:51.158713 getOrder(): Valor do tonce invalido.
+2013-11-22 23:35:30.663373 getOrder(): Valor do tonce invalido.
+2013-11-23 00:05:19.145778 ID: 1    ---- CANCEL ID: 51292
+2013-11-23 00:05:58.211200 ID: 1    LONG  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 00:07:17.872772 ID: 1    ++++ PUT ID: 51352 sell -0.01039048136 1949.76468613
+2013-11-23 00:07:17.876456 ID: 1    ASK  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 00:16:54.448022 getOrder(): Valor do tonce invalido.
+2013-11-23 01:07:58.559455 ID: 1    ---- CANCEL ID: 51352
+2013-11-23 01:08:42.176791 ID: 1    LONG  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 01:09:58.826087 ID: 1    ++++ PUT ID: 51397 sell -0.01039048136 1949.76468613
+2013-11-23 01:09:58.829735 ID: 1    ASK  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 02:10:39.516169 ID: 1    ---- CANCEL ID: 51397
+2013-11-23 02:11:36.035948 ID: 1    LONG  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 02:12:43.014347 ID: 1    ++++ PUT ID: 51417 sell -0.01039048136 1949.76468613
+2013-11-23 02:12:43.018131 ID: 1    ASK  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 02:16:51.642146 getOrder(): Valor do tonce invalido.
+2013-11-23 02:55:40.088988 getOrder(): Valor do tonce invalido.
+2013-11-23 02:56:29.056592 getOrder(): Valor do tonce invalido.
+2013-11-23 02:57:01.770237 getOrder(): Valor do tonce invalido.
+2013-11-23 02:57:37.249413 getOrder(): Valor do tonce invalido.
+2013-11-23 02:58:19.433886 getOrder(): Valor do tonce invalido.
+2013-11-23 02:59:48.890305 getOrder(): Valor do tonce invalido.
+2013-11-23 03:00:31.033994 getOrder(): Valor do tonce invalido.
+2013-11-23 03:13:38.909909 ID: 1    ---- CANCEL ID: 51417
+2013-11-23 03:14:17.715327 ID: 1    LONG  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 03:15:39.801132 ID: 1    ++++ PUT ID: 51435 sell -0.01039048136 1949.76468613
+2013-11-23 03:15:39.804754 ID: 1    ASK  $:2.54538462841e-06  M:0.01039048136  P:1928.55062921
+2013-11-23 12:32:30.233266 ID: 1    Started
+2013-11-23 12:32:30.242876 ID: 1    SHORT  $:50.0  M:0.0  P:0.0
+2013-11-23 12:33:12.271116 ID: 1    ++++ PUT ID: 51642 buy 0.0252843810046 1977.5054011
+2013-11-23 12:33:12.271910 ID: 1    BID  $:50.0  M:0.0  P:0.0
+2013-11-23 12:34:33.913534 ID: 1    LONG  $:2.01434800573e-06  M:0.02520852686  P:1977.5054011
+2013-11-23 12:35:52.295129 ID: 1    ++++ PUT ID: 51649 sell -0.02520852686 1999.25796051
+2013-11-23 12:35:52.296300 ID: 1    ASK  $:2.01434800573e-06  M:0.02520852686  P:1977.5054011
+2013-11-23 13:03:14.239006 ID: 1    SHORT  $:50.247161214  M:-3.1399999996e-09  P:0.0
+2013-11-23 13:04:36.793272 ID: 1    ++++ PUT ID: 51675 buy 0.0259214426105 1938.44
+2013-11-23 13:04:36.794449 ID: 1    BID  $:50.247161214  M:-3.1399999996e-09  P:0.0
+2013-11-23 13:16:52.953593 getOrder(): Valor do tonce invalido.
+2013-11-23 13:17:32.481893 getOrder(): Valor do tonce invalido.
+2013-11-23 13:25:21.272281 ID: 1    ---- CANCEL ID: 51675
+2013-11-23 13:26:01.776375 ID: 1    SHORT  $:50.247161214  M:-3.1399999996e-09  P:0.0
+2013-11-23 13:27:21.497282 ID: 1    ++++ PUT ID: 51692 buy 0.0254030137583 1978.0
+2013-11-23 13:27:21.498480 ID: 1    BID  $:50.247161214  M:-3.1399999996e-09  P:0.0
+2013-11-23 13:36:28.937831 getOrder(): Valor do tonce invalido.
+2013-11-23 13:38:12.559174 getOrder(): Valor do tonce invalido.
+2013-11-23 13:38:50.665345 getOrder(): Valor do tonce invalido.
+2013-11-23 13:48:36.629293 ID: 1    ---- CANCEL ID: 51692
+2013-11-23 13:49:17.205705 ID: 1    SHORT  $:50.247161214  M:-3.1399999996e-09  P:0.0
+2013-11-23 13:50:38.463509 ID: 1    ++++ PUT ID: 51716 buy 0.0254030137583 1978.0
+2013-11-23 13:50:38.464773 ID: 1    BID  $:50.247161214  M:-3.1399999996e-09  P:0.0
+2013-11-23 14:10:57.440448 ID: 1    LONG  $:7.43395960257e-06  M:0.02532679783  P:1978.00024523
+2013-11-23 14:12:03.374033 ID: 1    ++++ PUT ID: 51759 sell -0.02532679783 1999.75824793
+2013-11-23 14:12:03.375240 ID: 1    ASK  $:7.43395960257e-06  M:0.02532679783  P:1978.00024523
+2013-11-23 14:15:28.597028 getOrder(): Valor do tonce invalido.
+2013-11-23 14:16:51.776817 getOrder(): Valor do tonce invalido.
+2013-11-23 15:12:38.320445 ID: 1    ---- CANCEL ID: 51759
+2013-11-23 15:13:23.109483 ID: 1    LONG  $:7.43395960257e-06  M:0.02532679783  P:1978.00024523
+2013-11-23 15:14:38.506958 ID: 1    ++++ PUT ID: 51836 sell -0.02532679783 1999.75824793
+2013-11-23 15:14:38.507786 ID: 1    ASK  $:7.43395960257e-06  M:0.02532679783  P:1978.00024523
+2013-11-23 15:49:00.730876 getOrder(): Valor do tonce invalido.
+2013-11-23 15:51:37.113771 getOrder(): Valor do tonce invalido.
+2013-11-23 16:15:24.344379 ID: 1    ---- CANCEL ID: 51836
+2013-11-23 16:16:15.661709 getOrder(): Valor do tonce invalido.
+2013-11-23 16:16:15.662918 ID: 1    LONG  $:7.43395960257e-06  M:0.02532679783  P:1978.00024523
+2013-11-23 16:17:29.147974 ID: 1    ++++ PUT ID: 51867 sell -0.02532679783 1999.75824793
+2013-11-23 16:17:29.149149 ID: 1    ASK  $:7.43395960257e-06  M:0.02532679783  P:1978.00024523
