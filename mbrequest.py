@@ -7,7 +7,7 @@ from tools import *
 
 
 target_url = "www.mercadobitcoin.net"
-target_ver = "v2"  # v2 = last 24h | v1 = since past midnight
+#target_ver = "v2"  # v2 = last 24h | v1 = since past midnight
 api_cache = {}
 api_last_req = None
 api_min_dt = 30
@@ -46,7 +46,7 @@ def api_request(command):
 
 
     try:
-        conn.request("GET", "/api/" + target_ver + "/" + command + "/")
+        conn.request("GET", "/api/" + command + "/")
     except Exception as e:
         logMsg("ERROR api_request(): " + str(e))
     else:
