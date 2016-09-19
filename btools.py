@@ -1,15 +1,9 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.engine.url import URL
 import datetime
 import logging
 import logging.config
 import json
 import os
-import settings
 
-engine = create_engine(URL(**settings.BTDATA_PARAMS))
-session = sessionmaker(bind=engine)
 
 logger = logging.getLogger("btbot")
 
