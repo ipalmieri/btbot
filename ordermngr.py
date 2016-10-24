@@ -1,9 +1,8 @@
 import btools
-import btorder
 import collections
 import btdata
 
-logger = btools.logging.getLogger("btbot")
+logger = btools.logger
         
 
 def validate_order(order):
@@ -21,9 +20,8 @@ class orderManager():
         self.main_queue = collections.deque()
         self.broker_hub = {}
         self.open_orders = []
-        self.dbsession = btdata.session()
-        
 
+        
     def add_broker(self, name, broker):
         """Adds broker to brokers dict"""
         self.broker_hub[name] = broker
@@ -38,19 +36,14 @@ class orderManager():
             return False
         isvalid, msg = validate_order(order)
         if isvalid:
-            try:
-                order.status = 'ADDED'
-                self.dbsession.add(order)
-                self.dbsession.commit()
-            except Exception, e:
-                logger.error("Error adding order " + str(order.oid) + ": " + str(e))
-                order.status = 'CREATED'
-                self.dbsession.rollback()
-                return False
-            else:
+            order.status = 'ADDED'
+            if order.save():
                 self.main_queue.append(order)            
                 logger.info("Order " + str(order.oid) + " added with success")
                 return True
+            else:
+                logger.error("Error adding new order: " + str(e))
+                order.status = 'CREATED'
         else:
             logger.warning("Order " + str(order.oid) + " is invalid: " + msg)
         return False
@@ -61,7 +54,8 @@ class orderManager():
         logger.info("Resetting order queue")
         for ordm in self.main_queue:
             ordm.status = 'CANCELLED'
-        self.dbsession.commit()
+            if not orderm.save():
+                logger.error("Cannot cancel order " + str(ordm.oid) + " on database")
         self.main_queue.clear()
             
 
@@ -71,19 +65,21 @@ class orderManager():
             order = self.main_queue.popleft()
             if order.provider in broker_hub:
                 # TODO Criar nova thread para enviar ordem
-                broker_hub[order.provider].exec_order(order)
+                broker_hub[order.provider].execute_order(order)
                 return
             else:
                 logger.error("Broker " + order.provider + " not available in the hub")
             logger.warning("Restacking order " + str(order.oid) + " in main queue")
             main_queue.append(order)
-        
+        else:
+            logger.info("No order to send, empty queue")
+            
             
     def flush_all(self):
         """Tries to send all orders in the current queue"""
         count = len(main_queue)
         for i in range(0, count):
-            self.sendNext()
+            self.send_next()
 
     
     def cancel_order(self, order):
@@ -98,11 +94,11 @@ class orderManager():
                 # TODO criar nova thread para cancelar ordem
                 broker_hub[order.provider].cancel_order(order)
             else:
-                logger.error("No provider to cancel order " + str(order.oid))
+                logger.error("No provider to cancel open order " + str(order.oid))
         else:
             last_status = order.status
             order.status = 'CANCELLED'
-            if update_order(order):
+            if order.save():
                 for ordm in self.main_queue:
                     if ordm.oid == oid:
                         self.main_queue.remove(ordm)
@@ -113,32 +109,17 @@ class orderManager():
                 logger.error("Can't cancel order " + str(order.oid) + ": " + str(e))
 
 
-    def get_order(self, oid):
-        try:
-            order = self.dbsession.query(btdata.order).filter(btdata.order.oid == oid).one()
-            #self.dbsession.expunge(order)
-        except Exception, e:
-            logger.debug("Error getting order " + str(oid) + ": " + str(e))
-            order = None
-        return order
-
-
     def reload_added_orders(self):
         """Reloads all ADDED orders into queue"""
         if len(self.main_queue) > 0:
             logger.warning("Reloading non-empty order queue")
-        try:
-            qry = self.dbsession.query(btdata.order).filter(btdata.order.status == 'ADDED')
-            orders = qry.order_by(btdata.order.updated_ts).all()
-        except Exception, e:
-            logger.error("Error reloading added orders: " + str(e))
-        else:
+
+        orders = btdata.order.get_by_status('ADDED')
+
+        if orders is not None:
             self.main_queue.clear()
             self.main_queue = collections.deque(orders)
-
-
-    def persist_all(self):
-        pass
+            
         
 
     

@@ -2168,3 +2168,130 @@
 2016-09-16 14:40:19,027 [btbot] INFO: Order 1 added with success
 2016-09-16 14:40:19,032 [btbot] INFO: Adding order to the queue for execution
 2016-09-16 14:40:19,039 [btbot] INFO: Order 1 added with success
+2016-10-24 01:13:24,592 [btbot] INFO: teste info
+2016-10-24 01:13:24,594 [btbot] WARNING: teste warn
+2016-10-24 01:13:24,594 [btbot] ERROR: teste error
+2016-10-24 01:13:24,595 [btbot] DEBUG: teste debug
+2016-10-24 01:13:25,376 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:15:42,905 [btbot] INFO: teste info
+2016-10-24 01:15:42,906 [btbot] WARNING: teste warn
+2016-10-24 01:15:42,907 [btbot] ERROR: teste error
+2016-10-24 01:15:42,907 [btbot] DEBUG: teste debug
+2016-10-24 01:15:42,947 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:18:24,653 [btbot] INFO: teste info
+2016-10-24 01:18:24,654 [btbot] WARNING: teste warn
+2016-10-24 01:18:24,654 [btbot] ERROR: teste error
+2016-10-24 01:18:24,655 [btbot] DEBUG: teste debug
+2016-10-24 01:18:24,684 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:19:07,139 [btbot] INFO: teste info
+2016-10-24 01:19:07,140 [btbot] WARNING: teste warn
+2016-10-24 01:19:07,141 [btbot] ERROR: teste error
+2016-10-24 01:19:07,141 [btbot] DEBUG: teste debug
+2016-10-24 01:19:07,170 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:19:15,036 [btbot] INFO: teste info
+2016-10-24 01:19:15,037 [btbot] WARNING: teste warn
+2016-10-24 01:19:15,038 [btbot] ERROR: teste error
+2016-10-24 01:19:15,038 [btbot] DEBUG: teste debug
+2016-10-24 01:19:15,067 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:19:15,125 [btbot] INFO: Order 6 added with success
+2016-10-24 01:20:20,972 [btbot] INFO: teste info
+2016-10-24 01:20:20,973 [btbot] WARNING: teste warn
+2016-10-24 01:20:20,974 [btbot] ERROR: teste error
+2016-10-24 01:20:20,974 [btbot] DEBUG: teste debug
+2016-10-24 01:20:21,003 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:25:44,606 [btbot] INFO: teste info
+2016-10-24 01:25:44,607 [btbot] WARNING: teste warn
+2016-10-24 01:25:44,607 [btbot] ERROR: teste error
+2016-10-24 01:25:44,608 [btbot] DEBUG: teste debug
+2016-10-24 01:25:44,637 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:25:44,665 [btbot] INFO: Order 8 added with success
+2016-10-24 01:26:36,242 [btbot] INFO: teste info
+2016-10-24 01:26:36,242 [btbot] WARNING: teste warn
+2016-10-24 01:26:36,243 [btbot] ERROR: teste error
+2016-10-24 01:26:36,244 [btbot] DEBUG: teste debug
+2016-10-24 01:26:36,272 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:26:59,690 [btbot] INFO: teste info
+2016-10-24 01:26:59,690 [btbot] WARNING: teste warn
+2016-10-24 01:26:59,691 [btbot] ERROR: teste error
+2016-10-24 01:26:59,691 [btbot] DEBUG: teste debug
+2016-10-24 01:26:59,720 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:26:59,739 [btbot] INFO: Order 10 added with success
+2016-10-24 01:27:55,529 [btbot] INFO: teste info
+2016-10-24 01:27:55,530 [btbot] WARNING: teste warn
+2016-10-24 01:27:55,530 [btbot] ERROR: teste error
+2016-10-24 01:27:55,531 [btbot] DEBUG: teste debug
+2016-10-24 01:27:55,560 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:27:55,578 [btbot] INFO: Order 11 added with success
+2016-10-24 01:27:55,580 [btbot] DEBUG: Order 11 not found in database: global name 'btdata' is not defined
+2016-10-24 01:29:57,488 [btbot] INFO: teste info
+2016-10-24 01:29:57,489 [btbot] WARNING: teste warn
+2016-10-24 01:29:57,489 [btbot] ERROR: teste error
+2016-10-24 01:29:57,490 [btbot] DEBUG: teste debug
+2016-10-24 01:29:57,519 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:29:57,538 [btbot] INFO: Order 12 added with success
+2016-10-24 01:29:57,539 [btbot] DEBUG: Order 12 not found in database: global name 'btdata' is not defined
+2016-10-24 01:30:22,625 [btbot] INFO: teste info
+2016-10-24 01:30:22,628 [btbot] WARNING: teste warn
+2016-10-24 01:30:22,629 [btbot] ERROR: teste error
+2016-10-24 01:30:22,630 [btbot] DEBUG: teste debug
+2016-10-24 01:30:22,675 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:30:22,701 [btbot] INFO: Order 13 added with success
+2016-10-24 01:30:22,703 [btbot] DEBUG: Order 13 not found in database: global name 'btdata' is not defined
+2016-10-24 01:31:44,580 [btbot] INFO: teste info
+2016-10-24 01:31:44,587 [btbot] WARNING: teste warn
+2016-10-24 01:31:44,588 [btbot] ERROR: teste error
+2016-10-24 01:31:44,591 [btbot] DEBUG: teste debug
+2016-10-24 01:31:44,628 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:31:44,657 [btbot] INFO: Order 14 added with success
+2016-10-24 01:31:44,658 [btbot] DEBUG: Order 14 not found in database: local variable 'order' referenced before assignment
+2016-10-24 01:32:08,281 [btbot] INFO: teste info
+2016-10-24 01:32:08,283 [btbot] WARNING: teste warn
+2016-10-24 01:32:08,283 [btbot] ERROR: teste error
+2016-10-24 01:32:08,284 [btbot] DEBUG: teste debug
+2016-10-24 01:32:08,322 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:32:08,371 [btbot] INFO: Order 15 added with success
+2016-10-24 01:32:08,378 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:32:08,378 [btbot] WARNING: Order 15 is in state ADDED and was not added
+2016-10-24 01:32:29,216 [btbot] INFO: teste info
+2016-10-24 01:32:29,217 [btbot] WARNING: teste warn
+2016-10-24 01:32:29,218 [btbot] ERROR: teste error
+2016-10-24 01:32:29,218 [btbot] DEBUG: teste debug
+2016-10-24 01:32:29,249 [btbot] ERROR: Error getting order list: global name 'btdata' is not defined
+2016-10-24 01:32:29,251 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:32:29,272 [btbot] INFO: Order 16 added with success
+2016-10-24 01:32:29,278 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:32:29,279 [btbot] WARNING: Order 16 is in state ADDED and was not added
+2016-10-24 01:32:51,929 [btbot] INFO: teste info
+2016-10-24 01:32:51,930 [btbot] WARNING: teste warn
+2016-10-24 01:32:51,931 [btbot] ERROR: teste error
+2016-10-24 01:32:51,931 [btbot] DEBUG: teste debug
+2016-10-24 01:32:52,082 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:32:52,097 [btbot] INFO: Order 17 added with success
+2016-10-24 01:32:52,103 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:32:52,104 [btbot] WARNING: Order 17 is in state ADDED and was not added
+2016-10-24 01:36:26,378 [btbot] INFO: teste info
+2016-10-24 01:36:26,405 [btbot] WARNING: teste warn
+2016-10-24 01:36:26,406 [btbot] ERROR: teste error
+2016-10-24 01:36:26,406 [btbot] DEBUG: teste debug
+2016-10-24 01:36:26,450 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:36:26,465 [btbot] INFO: Order 18 added with success
+2016-10-24 01:36:26,472 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:36:26,472 [btbot] WARNING: Order 18 is in state ADDED and was not added
+2016-10-24 01:36:26,473 [btbot] INFO: Resetting order queue
+2016-10-24 01:37:23,963 [btbot] INFO: teste info
+2016-10-24 01:37:23,964 [btbot] WARNING: teste warn
+2016-10-24 01:37:23,964 [btbot] ERROR: teste error
+2016-10-24 01:37:23,965 [btbot] DEBUG: teste debug
+2016-10-24 01:37:24,010 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:37:24,024 [btbot] INFO: Order 19 added with success
+2016-10-24 01:37:24,031 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:37:24,031 [btbot] WARNING: Order 19 is in state ADDED and was not added
+2016-10-24 01:37:24,032 [btbot] INFO: Resetting order queue
+2016-10-24 01:39:33,673 [btbot] INFO: teste info
+2016-10-24 01:39:33,674 [btbot] WARNING: teste warn
+2016-10-24 01:39:33,675 [btbot] ERROR: teste error
+2016-10-24 01:39:33,675 [btbot] DEBUG: teste debug
+2016-10-24 01:39:33,715 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:39:33,729 [btbot] INFO: Order 20 added with success
+2016-10-24 01:39:33,736 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 01:39:33,737 [btbot] WARNING: Order 20 is in state ADDED and was not added

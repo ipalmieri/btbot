@@ -24,7 +24,7 @@ def main():
     ordm.asset = "BTC"
 
 
-    #bt.reload_added_orders()
+    bt.reload_added_orders()
 
     print ordm.oid
     s = btdata.session()
@@ -35,7 +35,7 @@ def main():
     
     print ordm.oid
 
-    ordm2 = bt.get_order(ordm.oid)
+    ordm2 = btdata.order.get_by_id(ordm.oid)
 
     ordm2.status = 'CREATED'
     bt.add_order(ordm)
@@ -43,6 +43,8 @@ def main():
     print ordm.status, ordm2.status
 
     
+    #bt.reset_queue()
+
     
 if __name__ == '__main__':
     main()

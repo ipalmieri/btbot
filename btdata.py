@@ -4,8 +4,11 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.engine.url import URL
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import *
+from contextlib import contextmanager
+import btools
 import settings
 
+logger = btools.logger
 engine = create_engine(URL(**settings.BTDATA_PARAMS))
 session = sessionmaker(bind=engine)
 
@@ -22,14 +25,31 @@ statusEnum = Enum('CREATED',
                   'INVALID',
                   name='ordstat')
 
+
 def safe_commit(s):
+    """Provides a safe commit with rollback."""
     try:
         s.commit()
     except Exception, e:
-        logger.error("Error commiting changes: " + str(e))
+        s.rollback()
+        logger.error("Failed commit at safe_commit(): " + str(e))
     else:
         return True
     return False
+
+
+@contextmanager
+def session_scope():
+    """Provides a transactional scope around a series of operations."""
+    session = btdata.session()
+    try:
+        yield session
+        session.commit()
+    except Exception, e:
+        session.rollback()
+        logger.error("Failed commit at session_scope(): " + str(e))
+    finally:
+        session.close()
         
 
 class order(base):
@@ -54,6 +74,44 @@ class order(base):
     def __init__(self):
         self.status = 'CREATED'
 
+        
+    def save(self):
+        s = session()
+        s.add(self)
+        ret = safe_commit(s)
+        s.refresh(self)
+        s.expunge(self)
+        s.close()
+        return ret
+
+    
+    @classmethod
+    def get_by_id(cls, oid):
+        s = session()
+        try:
+            ordr = s.query(order).filter(order.oid == oid).one()
+            s.expunge(ordr)
+        except Exception, e:
+            logger.debug("Order " + str(oid) + " not found in database: " + str(e))
+            ordr = None
+        finally:
+            s.close()
+        return ordr
+      
+    
+    @classmethod
+    def get_by_status(cls, status):
+        s = session()
+        try:
+            qry = s.query(order).filter(order.status == 'ADDED')
+            orders = qry.order_by(order.updated_ts).all()
+        except Exception, e:
+            logger.error("Error getting order list: " + str(e))
+            orders = None
+        finally:
+            s.expunge_all()
+            s.close()
+        return orders
         
     
 class bsheet(base):
