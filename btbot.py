@@ -1,12 +1,14 @@
+from btorder import *
 from ordermngr import *
 import btools
-import btdata
+import btmodels
 
 logger = btools.logger
 
 def main():
 
     btools.init_logging()
+    dbcon.init_db()
     
     logger.info("teste info")
     logger.warning("teste warn")
@@ -15,9 +17,8 @@ def main():
 
     bt = orderManager()
 
-    btdata.base.metadata.create_all(btdata.engine)
-
-    ordm = btdata.order()
+  
+    ordm = order()
     ordm.otype = 'BUY'
     ordm.quantity = 1.056
     ordm.price = 0.0001
@@ -26,21 +27,24 @@ def main():
 
     bt.reload_added_orders()
 
-    print ordm.oid
-    s = btdata.session()
+    print str(ordm.oid) + ":" + ordm.status
+
+    s = dbcon.session()
     
     #s.add(ordm)
     #s.commit()
     bt.add_order(ordm)
     
-    print ordm.oid
-
-    ordm2 = btdata.order.get_by_id(ordm.oid)
+    ordm2 = order.get_by_id(ordm.oid)
 
     ordm2.status = 'CREATED'
-    bt.add_order(ordm)
+    #bt.add_order(ordm)
+
+    ordm2.oid = 1
+    ordm2 = ordm2.reload()
     
-    print ordm.status, ordm2.status
+    print str(ordm.oid) + ":" + ordm.status
+    print str(ordm2.oid) + ":" + ordm2.status
 
     
     #bt.reset_queue()

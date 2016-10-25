@@ -2295,3 +2295,426 @@
 2016-10-24 01:39:33,729 [btbot] INFO: Order 20 added with success
 2016-10-24 01:39:33,736 [btbot] INFO: Adding order to the queue for execution
 2016-10-24 01:39:33,737 [btbot] WARNING: Order 20 is in state ADDED and was not added
+2016-10-24 10:27:07,476 [btbot] INFO: teste info
+2016-10-24 10:27:07,488 [btbot] WARNING: teste warn
+2016-10-24 10:27:07,488 [btbot] ERROR: teste error
+2016-10-24 10:27:07,489 [btbot] DEBUG: teste debug
+2016-10-24 10:27:07,533 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:27:45,556 [btbot] INFO: teste info
+2016-10-24 10:27:45,557 [btbot] WARNING: teste warn
+2016-10-24 10:27:45,558 [btbot] ERROR: teste error
+2016-10-24 10:27:45,558 [btbot] DEBUG: teste debug
+2016-10-24 10:27:45,603 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:28:59,809 [btbot] INFO: teste info
+2016-10-24 10:28:59,810 [btbot] WARNING: teste warn
+2016-10-24 10:28:59,810 [btbot] ERROR: teste error
+2016-10-24 10:28:59,811 [btbot] DEBUG: teste debug
+2016-10-24 10:28:59,856 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:28:59,868 [btbot] INFO: Order None added with success
+2016-10-24 10:28:59,875 [btbot] DEBUG: Order None not found in database: No row was found for one()
+2016-10-24 10:32:23,426 [btbot] INFO: teste info
+2016-10-24 10:32:23,427 [btbot] WARNING: teste warn
+2016-10-24 10:32:23,428 [btbot] ERROR: teste error
+2016-10-24 10:32:23,428 [btbot] DEBUG: teste debug
+2016-10-24 10:32:23,474 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:33:32,932 [btbot] INFO: teste info
+2016-10-24 10:33:32,932 [btbot] WARNING: teste warn
+2016-10-24 10:33:32,933 [btbot] ERROR: teste error
+2016-10-24 10:33:32,933 [btbot] DEBUG: teste debug
+2016-10-24 10:33:32,979 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:33:32,996 [btbot] ERROR: Error adding new order
+2016-10-24 10:33:33,005 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:33:33,085 [btbot] ERROR: Failed commit at safe_commit(): (IntegrityError) duplicate key value violates unique constraint "orders_pkey"
+DETAIL:  Key (oid)=(25) already exists.
+ 'INSERT INTO orders (oid, otype, provider, quantity, price, asset, exec_quantity, exec_price, fees, status, updated_ts, created_ts, target_date, remote_info) VALUES (%(oid)s, %(otype)s, %(provider)s, %(quantity)s, %(price)s, %(asset)s, %(exec_quantity)s, %(exec_price)s, %(fees)s, %(status)s, %(updated_ts)s, %(created_ts)s, %(target_date)s, %(remote_info)s)' {'status': 'ADDED', 'created_ts': datetime.datetime(2016, 10, 24, 10, 33, 32, 985020), 'exec_price': Decimal('0'), 'exec_quantity': Decimal('0'), 'target_date': datetime.date(2016, 10, 24), 'price': Decimal('0.0001'), 'oid': 25, 'fees': Decimal('0'), 'otype': 'BUY', 'updated_ts': datetime.datetime(2016, 10, 24, 10, 33, 32, 985020), 'provider': None, 'quantity': Decimal('1.056'), 'remote_info': None, 'asset': u'BTC'}
+2016-10-24 10:34:18,382 [btbot] INFO: teste info
+2016-10-24 10:34:18,383 [btbot] WARNING: teste warn
+2016-10-24 10:34:18,384 [btbot] ERROR: teste error
+2016-10-24 10:34:18,384 [btbot] DEBUG: teste debug
+2016-10-24 10:34:18,745 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:34:18,768 [btbot] ERROR: Error adding new order
+2016-10-24 10:34:18,777 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:34:18,785 [btbot] ERROR: Failed commit at safe_commit(): (IntegrityError) duplicate key value violates unique constraint "orders_pkey"
+DETAIL:  Key (oid)=(1) already exists.
+ 'INSERT INTO orders (oid, otype, provider, quantity, price, asset, exec_quantity, exec_price, fees, status, updated_ts, created_ts, target_date, remote_info) VALUES (%(oid)s, %(otype)s, %(provider)s, %(quantity)s, %(price)s, %(asset)s, %(exec_quantity)s, %(exec_price)s, %(fees)s, %(status)s, %(updated_ts)s, %(created_ts)s, %(target_date)s, %(remote_info)s)' {'status': 'ADDED', 'created_ts': datetime.datetime(2016, 10, 24, 10, 34, 18, 750064), 'oid': 1, 'exec_quantity': Decimal('0'), 'target_date': datetime.date(2016, 10, 24), 'price': Decimal('0.0001'), 'exec_price': Decimal('0'), 'fees': Decimal('0'), 'otype': 'BUY', 'updated_ts': datetime.datetime(2016, 10, 24, 10, 34, 18, 750064), 'provider': None, 'quantity': Decimal('1.056'), 'remote_info': None, 'asset': u'BTC'}
+2016-10-24 10:34:38,117 [btbot] INFO: teste info
+2016-10-24 10:34:38,118 [btbot] WARNING: teste warn
+2016-10-24 10:34:38,119 [btbot] ERROR: teste error
+2016-10-24 10:34:38,119 [btbot] DEBUG: teste debug
+2016-10-24 10:34:38,228 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:34:38,246 [btbot] INFO: Order 1 added with success
+2016-10-24 10:34:38,255 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:34:38,256 [btbot] WARNING: Order 1 is in state ADDED and was not added
+2016-10-24 10:34:45,297 [btbot] INFO: teste info
+2016-10-24 10:34:45,298 [btbot] WARNING: teste warn
+2016-10-24 10:34:45,299 [btbot] ERROR: teste error
+2016-10-24 10:34:45,299 [btbot] DEBUG: teste debug
+2016-10-24 10:34:45,345 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:34:45,362 [btbot] INFO: Order 2 added with success
+2016-10-24 10:34:45,371 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:34:45,372 [btbot] WARNING: Order 2 is in state ADDED and was not added
+2016-10-24 10:50:38,906 [btbot] INFO: teste info
+2016-10-24 10:50:38,907 [btbot] WARNING: teste warn
+2016-10-24 10:50:38,908 [btbot] ERROR: teste error
+2016-10-24 10:50:38,908 [btbot] DEBUG: teste debug
+2016-10-24 10:50:38,953 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:50:38,970 [btbot] INFO: Order 3 added with success
+2016-10-24 10:50:58,519 [btbot] INFO: teste info
+2016-10-24 10:50:58,520 [btbot] WARNING: teste warn
+2016-10-24 10:50:58,520 [btbot] ERROR: teste error
+2016-10-24 10:50:58,521 [btbot] DEBUG: teste debug
+2016-10-24 10:50:58,566 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:50:58,583 [btbot] INFO: Order 4 added with success
+2016-10-24 10:52:15,801 [btbot] INFO: teste info
+2016-10-24 10:52:15,802 [btbot] WARNING: teste warn
+2016-10-24 10:52:15,802 [btbot] ERROR: teste error
+2016-10-24 10:52:15,803 [btbot] DEBUG: teste debug
+2016-10-24 10:52:15,849 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:52:15,866 [btbot] INFO: Order 5 added with success
+2016-10-24 10:52:22,200 [btbot] INFO: teste info
+2016-10-24 10:52:22,201 [btbot] WARNING: teste warn
+2016-10-24 10:52:22,201 [btbot] ERROR: teste error
+2016-10-24 10:52:22,202 [btbot] DEBUG: teste debug
+2016-10-24 10:52:22,247 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:52:22,265 [btbot] INFO: Order 6 added with success
+2016-10-24 10:53:03,557 [btbot] INFO: teste info
+2016-10-24 10:53:03,558 [btbot] WARNING: teste warn
+2016-10-24 10:53:03,558 [btbot] ERROR: teste error
+2016-10-24 10:53:03,559 [btbot] DEBUG: teste debug
+2016-10-24 10:53:03,604 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:53:03,621 [btbot] INFO: Order 7 added with success
+2016-10-24 10:53:25,673 [btbot] INFO: teste info
+2016-10-24 10:53:25,674 [btbot] WARNING: teste warn
+2016-10-24 10:53:25,674 [btbot] ERROR: teste error
+2016-10-24 10:53:25,675 [btbot] DEBUG: teste debug
+2016-10-24 10:53:25,722 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:53:25,741 [btbot] INFO: Order 8 added with success
+2016-10-24 10:53:34,504 [btbot] INFO: teste info
+2016-10-24 10:53:34,505 [btbot] WARNING: teste warn
+2016-10-24 10:53:34,505 [btbot] ERROR: teste error
+2016-10-24 10:53:34,506 [btbot] DEBUG: teste debug
+2016-10-24 10:53:34,553 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 10:53:34,571 [btbot] INFO: Order 9 added with success
+2016-10-24 11:06:00,542 [btbot] INFO: teste info
+2016-10-24 11:06:00,543 [btbot] WARNING: teste warn
+2016-10-24 11:06:00,543 [btbot] ERROR: teste error
+2016-10-24 11:06:00,544 [btbot] DEBUG: teste debug
+2016-10-24 11:06:00,591 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:06:00,609 [btbot] INFO: Order 10 added with success
+2016-10-24 11:06:06,935 [btbot] INFO: teste info
+2016-10-24 11:06:06,936 [btbot] WARNING: teste warn
+2016-10-24 11:06:06,936 [btbot] ERROR: teste error
+2016-10-24 11:06:06,937 [btbot] DEBUG: teste debug
+2016-10-24 11:06:06,983 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:06:07,001 [btbot] INFO: Order 11 added with success
+2016-10-24 11:06:21,641 [btbot] INFO: teste info
+2016-10-24 11:06:21,642 [btbot] WARNING: teste warn
+2016-10-24 11:06:21,642 [btbot] ERROR: teste error
+2016-10-24 11:06:21,643 [btbot] DEBUG: teste debug
+2016-10-24 11:06:21,689 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:06:21,708 [btbot] INFO: Order 12 added with success
+2016-10-24 11:06:53,194 [btbot] INFO: teste info
+2016-10-24 11:06:53,194 [btbot] WARNING: teste warn
+2016-10-24 11:06:53,195 [btbot] ERROR: teste error
+2016-10-24 11:06:53,195 [btbot] DEBUG: teste debug
+2016-10-24 11:06:53,242 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:06:53,260 [btbot] INFO: Order 13 added with success
+2016-10-24 11:07:43,766 [btbot] INFO: teste info
+2016-10-24 11:07:43,767 [btbot] WARNING: teste warn
+2016-10-24 11:07:43,768 [btbot] ERROR: teste error
+2016-10-24 11:07:43,768 [btbot] DEBUG: teste debug
+2016-10-24 11:07:43,815 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:07:43,833 [btbot] INFO: Order 14 added with success
+2016-10-24 11:07:49,719 [btbot] INFO: teste info
+2016-10-24 11:07:49,720 [btbot] WARNING: teste warn
+2016-10-24 11:07:49,720 [btbot] ERROR: teste error
+2016-10-24 11:07:49,721 [btbot] DEBUG: teste debug
+2016-10-24 11:07:49,768 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:07:49,786 [btbot] INFO: Order 15 added with success
+2016-10-24 11:10:33,782 [btbot] INFO: teste info
+2016-10-24 11:10:33,783 [btbot] WARNING: teste warn
+2016-10-24 11:10:33,784 [btbot] ERROR: teste error
+2016-10-24 11:10:33,784 [btbot] DEBUG: teste debug
+2016-10-24 11:10:33,831 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:10:33,849 [btbot] INFO: Order 16 added with success
+2016-10-24 11:10:44,618 [btbot] INFO: teste info
+2016-10-24 11:10:44,619 [btbot] WARNING: teste warn
+2016-10-24 11:10:44,620 [btbot] ERROR: teste error
+2016-10-24 11:10:44,620 [btbot] DEBUG: teste debug
+2016-10-24 11:10:44,700 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:10:44,721 [btbot] INFO: Order 1 added with success
+2016-10-24 11:16:33,038 [btbot] INFO: teste info
+2016-10-24 11:16:33,038 [btbot] WARNING: teste warn
+2016-10-24 11:16:33,039 [btbot] ERROR: teste error
+2016-10-24 11:16:33,039 [btbot] DEBUG: teste debug
+2016-10-24 11:16:33,085 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:16:33,102 [btbot] INFO: Order 2 added with success
+2016-10-24 11:16:57,798 [btbot] INFO: teste info
+2016-10-24 11:16:57,799 [btbot] WARNING: teste warn
+2016-10-24 11:16:57,799 [btbot] ERROR: teste error
+2016-10-24 11:16:57,800 [btbot] DEBUG: teste debug
+2016-10-24 11:16:57,845 [btbot] INFO: Adding order to the queue for execution
+2016-10-24 11:16:57,863 [btbot] INFO: Order 3 added with success
+2016-10-25 11:59:51,507 [btbot] INFO: teste info
+2016-10-25 11:59:51,528 [btbot] WARNING: teste warn
+2016-10-25 11:59:51,528 [btbot] ERROR: teste error
+2016-10-25 11:59:51,529 [btbot] DEBUG: teste debug
+2016-10-25 12:00:19,295 [btbot] INFO: teste info
+2016-10-25 12:00:19,296 [btbot] WARNING: teste warn
+2016-10-25 12:00:19,296 [btbot] ERROR: teste error
+2016-10-25 12:00:19,297 [btbot] DEBUG: teste debug
+2016-10-25 12:01:01,652 [btbot] INFO: teste info
+2016-10-25 12:01:01,653 [btbot] WARNING: teste warn
+2016-10-25 12:01:01,654 [btbot] ERROR: teste error
+2016-10-25 12:01:01,654 [btbot] DEBUG: teste debug
+2016-10-25 12:01:14,594 [btbot] INFO: teste info
+2016-10-25 12:01:14,595 [btbot] WARNING: teste warn
+2016-10-25 12:01:14,595 [btbot] ERROR: teste error
+2016-10-25 12:01:14,596 [btbot] DEBUG: teste debug
+2016-10-25 12:19:15,342 [btbot] INFO: teste info
+2016-10-25 12:19:15,343 [btbot] WARNING: teste warn
+2016-10-25 12:19:15,343 [btbot] ERROR: teste error
+2016-10-25 12:19:15,344 [btbot] DEBUG: teste debug
+2016-10-25 12:20:39,994 [btbot] INFO: teste info
+2016-10-25 12:20:39,995 [btbot] WARNING: teste warn
+2016-10-25 12:20:39,995 [btbot] ERROR: teste error
+2016-10-25 12:20:39,996 [btbot] DEBUG: teste debug
+2016-10-25 12:20:50,570 [btbot] INFO: teste info
+2016-10-25 12:20:50,571 [btbot] WARNING: teste warn
+2016-10-25 12:20:50,572 [btbot] ERROR: teste error
+2016-10-25 12:20:50,573 [btbot] DEBUG: teste debug
+2016-10-25 12:20:50,614 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:27:24,060 [btbot] INFO: teste info
+2016-10-25 12:27:24,061 [btbot] WARNING: teste warn
+2016-10-25 12:27:24,061 [btbot] ERROR: teste error
+2016-10-25 12:27:24,062 [btbot] DEBUG: teste debug
+2016-10-25 12:27:24,103 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:28:00,304 [btbot] INFO: teste info
+2016-10-25 12:28:00,305 [btbot] WARNING: teste warn
+2016-10-25 12:28:00,306 [btbot] ERROR: teste error
+2016-10-25 12:28:00,306 [btbot] DEBUG: teste debug
+2016-10-25 12:28:00,348 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:30:25,902 [btbot] INFO: teste info
+2016-10-25 12:30:25,903 [btbot] WARNING: teste warn
+2016-10-25 12:30:25,904 [btbot] ERROR: teste error
+2016-10-25 12:30:25,904 [btbot] DEBUG: teste debug
+2016-10-25 12:30:25,946 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:31:11,181 [btbot] INFO: teste info
+2016-10-25 12:31:11,182 [btbot] WARNING: teste warn
+2016-10-25 12:31:11,182 [btbot] ERROR: teste error
+2016-10-25 12:31:11,183 [btbot] DEBUG: teste debug
+2016-10-25 12:31:11,225 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:31:11,252 [btbot] INFO: Order 4 added with success
+2016-10-25 12:31:17,022 [btbot] INFO: teste info
+2016-10-25 12:31:17,023 [btbot] WARNING: teste warn
+2016-10-25 12:31:17,023 [btbot] ERROR: teste error
+2016-10-25 12:31:17,024 [btbot] DEBUG: teste debug
+2016-10-25 12:31:17,065 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:31:17,081 [btbot] INFO: Order 5 added with success
+2016-10-25 12:31:25,355 [btbot] INFO: teste info
+2016-10-25 12:31:25,355 [btbot] WARNING: teste warn
+2016-10-25 12:31:25,356 [btbot] ERROR: teste error
+2016-10-25 12:31:25,356 [btbot] DEBUG: teste debug
+2016-10-25 12:31:25,452 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:31:25,472 [btbot] INFO: Order 1 added with success
+2016-10-25 12:38:35,642 [btbot] INFO: teste info
+2016-10-25 12:38:35,643 [btbot] WARNING: teste warn
+2016-10-25 12:38:35,644 [btbot] ERROR: teste error
+2016-10-25 12:38:35,644 [btbot] DEBUG: teste debug
+2016-10-25 12:38:35,686 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:38:35,701 [btbot] INFO: Order 2 added with success
+2016-10-25 12:56:38,654 [btbot] INFO: Starting database operations
+2016-10-25 12:56:49,729 [btbot] INFO: Starting database operations
+2016-10-25 12:57:36,384 [btbot] INFO: Starting database operations
+2016-10-25 12:58:11,529 [btbot] INFO: Starting database operations
+2016-10-25 12:58:11,555 [btbot] INFO: teste info
+2016-10-25 12:58:11,556 [btbot] WARNING: teste warn
+2016-10-25 12:58:11,557 [btbot] ERROR: teste error
+2016-10-25 12:58:11,557 [btbot] DEBUG: teste debug
+2016-10-25 12:58:11,574 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:59:03,701 [btbot] INFO: Starting database operations
+2016-10-25 12:59:03,727 [btbot] INFO: teste info
+2016-10-25 12:59:03,728 [btbot] WARNING: teste warn
+2016-10-25 12:59:03,728 [btbot] ERROR: teste error
+2016-10-25 12:59:03,729 [btbot] DEBUG: teste debug
+2016-10-25 12:59:03,745 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 12:59:03,760 [btbot] INFO: Order 3 added with success
+2016-10-25 13:01:29,187 [btbot] INFO: Starting database operations
+2016-10-25 13:01:29,213 [btbot] INFO: teste info
+2016-10-25 13:01:29,214 [btbot] WARNING: teste warn
+2016-10-25 13:01:29,215 [btbot] ERROR: teste error
+2016-10-25 13:01:29,216 [btbot] DEBUG: teste debug
+2016-10-25 13:01:29,232 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:01:29,248 [btbot] INFO: Order 4 added with success
+2016-10-25 13:01:50,095 [btbot] INFO: Starting database operations
+2016-10-25 13:01:50,121 [btbot] INFO: teste info
+2016-10-25 13:01:50,122 [btbot] WARNING: teste warn
+2016-10-25 13:01:50,122 [btbot] ERROR: teste error
+2016-10-25 13:01:50,123 [btbot] DEBUG: teste debug
+2016-10-25 13:01:50,140 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:01:50,155 [btbot] INFO: Order 5 added with success
+2016-10-25 13:02:28,262 [btbot] INFO: Starting database operations
+2016-10-25 13:02:28,288 [btbot] INFO: teste info
+2016-10-25 13:02:28,289 [btbot] WARNING: teste warn
+2016-10-25 13:02:28,290 [btbot] ERROR: teste error
+2016-10-25 13:02:28,290 [btbot] DEBUG: teste debug
+2016-10-25 13:02:28,308 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:02:28,323 [btbot] INFO: Order 6 added with success
+2016-10-25 13:03:32,470 [btbot] INFO: Starting database operations
+2016-10-25 13:03:32,496 [btbot] INFO: teste info
+2016-10-25 13:03:32,497 [btbot] WARNING: teste warn
+2016-10-25 13:03:32,497 [btbot] ERROR: teste error
+2016-10-25 13:03:32,498 [btbot] DEBUG: teste debug
+2016-10-25 13:03:32,515 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:03:32,530 [btbot] INFO: Order 7 added with success
+2016-10-25 13:03:51,636 [btbot] INFO: Starting database operations
+2016-10-25 13:03:51,662 [btbot] INFO: teste info
+2016-10-25 13:03:51,663 [btbot] WARNING: teste warn
+2016-10-25 13:03:51,664 [btbot] ERROR: teste error
+2016-10-25 13:03:51,664 [btbot] DEBUG: teste debug
+2016-10-25 13:03:51,682 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:03:51,697 [btbot] INFO: Order 8 added with success
+2016-10-25 13:04:05,304 [btbot] INFO: Starting database operations
+2016-10-25 13:04:05,329 [btbot] INFO: teste info
+2016-10-25 13:04:05,330 [btbot] WARNING: teste warn
+2016-10-25 13:04:05,331 [btbot] ERROR: teste error
+2016-10-25 13:04:05,331 [btbot] DEBUG: teste debug
+2016-10-25 13:04:05,349 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:04:05,364 [btbot] INFO: Order 9 added with success
+2016-10-25 13:04:10,202 [btbot] INFO: Starting database operations
+2016-10-25 13:04:10,228 [btbot] INFO: teste info
+2016-10-25 13:04:10,228 [btbot] WARNING: teste warn
+2016-10-25 13:04:10,229 [btbot] ERROR: teste error
+2016-10-25 13:04:10,230 [btbot] DEBUG: teste debug
+2016-10-25 13:04:10,248 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:04:10,263 [btbot] INFO: Order 10 added with success
+2016-10-25 13:05:23,005 [btbot] INFO: Starting database operations
+2016-10-25 13:05:23,031 [btbot] INFO: teste info
+2016-10-25 13:05:23,032 [btbot] WARNING: teste warn
+2016-10-25 13:05:23,033 [btbot] ERROR: teste error
+2016-10-25 13:05:23,033 [btbot] DEBUG: teste debug
+2016-10-25 13:05:23,052 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:05:23,066 [btbot] INFO: Order 11 added with success
+2016-10-25 13:07:06,661 [btbot] INFO: Starting database operations
+2016-10-25 13:07:06,687 [btbot] INFO: teste info
+2016-10-25 13:07:06,687 [btbot] WARNING: teste warn
+2016-10-25 13:07:06,688 [btbot] ERROR: teste error
+2016-10-25 13:07:06,689 [btbot] DEBUG: teste debug
+2016-10-25 13:07:06,708 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:07:06,722 [btbot] INFO: Order 12 added with success
+2016-10-25 13:11:57,464 [btbot] INFO: Starting database operations
+2016-10-25 13:11:57,490 [btbot] INFO: teste info
+2016-10-25 13:11:57,490 [btbot] WARNING: teste warn
+2016-10-25 13:11:57,491 [btbot] ERROR: teste error
+2016-10-25 13:11:57,492 [btbot] DEBUG: teste debug
+2016-10-25 13:11:57,511 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:11:57,526 [btbot] INFO: Order 13 added with success
+2016-10-25 13:12:27,159 [btbot] INFO: Starting database operations
+2016-10-25 13:12:27,184 [btbot] INFO: teste info
+2016-10-25 13:12:27,185 [btbot] WARNING: teste warn
+2016-10-25 13:12:27,186 [btbot] ERROR: teste error
+2016-10-25 13:12:27,186 [btbot] DEBUG: teste debug
+2016-10-25 13:12:27,205 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:12:27,220 [btbot] INFO: Order 14 added with success
+2016-10-25 13:12:35,062 [btbot] INFO: Starting database operations
+2016-10-25 13:12:35,128 [btbot] INFO: teste info
+2016-10-25 13:12:35,128 [btbot] WARNING: teste warn
+2016-10-25 13:12:35,129 [btbot] ERROR: teste error
+2016-10-25 13:12:35,130 [btbot] DEBUG: teste debug
+2016-10-25 13:12:35,144 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:12:35,158 [btbot] INFO: Order 1 added with success
+2016-10-25 13:12:38,507 [btbot] INFO: Starting database operations
+2016-10-25 13:12:38,533 [btbot] INFO: teste info
+2016-10-25 13:12:38,533 [btbot] WARNING: teste warn
+2016-10-25 13:12:38,534 [btbot] ERROR: teste error
+2016-10-25 13:12:38,535 [btbot] DEBUG: teste debug
+2016-10-25 13:12:38,551 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 13:12:38,566 [btbot] INFO: Order 2 added with success
+2016-10-25 14:07:19,970 [btbot] INFO: Starting database operations
+2016-10-25 14:07:19,996 [btbot] INFO: teste info
+2016-10-25 14:07:19,996 [btbot] WARNING: teste warn
+2016-10-25 14:07:19,997 [btbot] ERROR: teste error
+2016-10-25 14:07:19,997 [btbot] DEBUG: teste debug
+2016-10-25 14:07:20,014 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:07:20,029 [btbot] INFO: Order 3 added with success
+2016-10-25 14:12:17,507 [btbot] INFO: Starting database operations
+2016-10-25 14:12:17,533 [btbot] INFO: teste info
+2016-10-25 14:12:17,533 [btbot] WARNING: teste warn
+2016-10-25 14:12:17,534 [btbot] ERROR: teste error
+2016-10-25 14:12:17,535 [btbot] DEBUG: teste debug
+2016-10-25 14:12:17,551 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:12:17,566 [btbot] INFO: Order 4 added with success
+2016-10-25 14:12:52,261 [btbot] INFO: Starting database operations
+2016-10-25 14:12:52,287 [btbot] INFO: teste info
+2016-10-25 14:12:52,288 [btbot] WARNING: teste warn
+2016-10-25 14:12:52,289 [btbot] ERROR: teste error
+2016-10-25 14:12:52,290 [btbot] DEBUG: teste debug
+2016-10-25 14:12:52,307 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:12:52,322 [btbot] INFO: Order 5 added with success
+2016-10-25 14:28:52,630 [btbot] INFO: Starting database operations
+2016-10-25 14:28:52,655 [btbot] INFO: teste info
+2016-10-25 14:28:52,656 [btbot] WARNING: teste warn
+2016-10-25 14:28:52,656 [btbot] ERROR: teste error
+2016-10-25 14:28:52,657 [btbot] DEBUG: teste debug
+2016-10-25 14:28:52,675 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:28:52,689 [btbot] INFO: Order 6 added with success
+2016-10-25 14:28:52,695 [btbot] ERROR: Error reloading object
+2016-10-25 14:31:33,311 [btbot] INFO: Starting database operations
+2016-10-25 14:31:33,336 [btbot] INFO: teste info
+2016-10-25 14:31:33,337 [btbot] WARNING: teste warn
+2016-10-25 14:31:33,338 [btbot] ERROR: teste error
+2016-10-25 14:31:33,339 [btbot] DEBUG: teste debug
+2016-10-25 14:31:33,356 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:31:33,371 [btbot] INFO: Order 7 added with success
+2016-10-25 14:31:33,377 [btbot] ERROR: Error reloading object
+2016-10-25 14:31:55,816 [btbot] INFO: Starting database operations
+2016-10-25 14:31:55,842 [btbot] INFO: teste info
+2016-10-25 14:31:55,843 [btbot] WARNING: teste warn
+2016-10-25 14:31:55,844 [btbot] ERROR: teste error
+2016-10-25 14:31:55,844 [btbot] DEBUG: teste debug
+2016-10-25 14:31:55,862 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:31:55,877 [btbot] INFO: Order 8 added with success
+2016-10-25 14:31:55,883 [btbot] ERROR: Error reloading object
+2016-10-25 14:33:03,101 [btbot] INFO: Starting database operations
+2016-10-25 14:33:03,126 [btbot] INFO: teste info
+2016-10-25 14:33:03,127 [btbot] WARNING: teste warn
+2016-10-25 14:33:03,128 [btbot] ERROR: teste error
+2016-10-25 14:33:03,129 [btbot] DEBUG: teste debug
+2016-10-25 14:33:03,147 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:33:03,162 [btbot] INFO: Order 9 added with success
+2016-10-25 14:33:33,289 [btbot] INFO: Starting database operations
+2016-10-25 14:33:33,315 [btbot] INFO: teste info
+2016-10-25 14:33:33,316 [btbot] WARNING: teste warn
+2016-10-25 14:33:33,317 [btbot] ERROR: teste error
+2016-10-25 14:33:33,317 [btbot] DEBUG: teste debug
+2016-10-25 14:33:33,336 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:33:33,350 [btbot] INFO: Order 10 added with success
+2016-10-25 14:36:27,486 [btbot] INFO: Starting database operations
+2016-10-25 14:36:27,512 [btbot] INFO: teste info
+2016-10-25 14:36:27,513 [btbot] WARNING: teste warn
+2016-10-25 14:36:27,513 [btbot] ERROR: teste error
+2016-10-25 14:36:27,514 [btbot] DEBUG: teste debug
+2016-10-25 14:36:27,533 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:36:27,547 [btbot] INFO: Order 11 added with success
+2016-10-25 14:37:47,129 [btbot] INFO: Starting database operations
+2016-10-25 14:37:47,155 [btbot] INFO: teste info
+2016-10-25 14:37:47,155 [btbot] WARNING: teste warn
+2016-10-25 14:37:47,156 [btbot] ERROR: teste error
+2016-10-25 14:37:47,157 [btbot] DEBUG: teste debug
+2016-10-25 14:37:47,176 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:37:47,191 [btbot] INFO: Order 12 added with success
+2016-10-25 14:37:47,198 [btbot] ERROR: Error reloading object
+2016-10-25 14:58:21,766 [btbot] INFO: Starting database operations
+2016-10-25 14:58:21,792 [btbot] INFO: teste info
+2016-10-25 14:58:21,793 [btbot] WARNING: teste warn
+2016-10-25 14:58:21,793 [btbot] ERROR: teste error
+2016-10-25 14:58:21,794 [btbot] DEBUG: teste debug
+2016-10-25 14:58:21,813 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:58:21,828 [btbot] INFO: Order 13 added with success
+2016-10-25 14:58:32,765 [btbot] INFO: Starting database operations
+2016-10-25 14:58:32,838 [btbot] INFO: teste info
+2016-10-25 14:58:32,839 [btbot] WARNING: teste warn
+2016-10-25 14:58:32,840 [btbot] ERROR: teste error
+2016-10-25 14:58:32,841 [btbot] DEBUG: teste debug
+2016-10-25 14:58:32,855 [btbot] INFO: Adding order to the queue for execution
+2016-10-25 14:58:32,869 [btbot] INFO: Order 1 added with success

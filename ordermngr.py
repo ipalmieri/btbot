@@ -1,14 +1,9 @@
-import btools
 import collections
-import btdata
+import btools, btorder
+
 
 logger = btools.logger
         
-
-def validate_order(order):
-    """Indicates if order is valid and why not if it isn't"""
-    return True, ""
-
 
 class orderManager():
     """Hub of orders to be sent to brokers
@@ -23,8 +18,8 @@ class orderManager():
 
         
     def add_broker(self, name, broker):
-        """Adds broker to brokers dict"""
-        self.broker_hub[name] = broker
+         """Adds broker to brokers dict"""
+         self.broker_hub[name] = broker
 
         
     def add_order(self, order):
@@ -37,12 +32,12 @@ class orderManager():
         isvalid, msg = validate_order(order)
         if isvalid:
             order.status = 'ADDED'
-            if order.save():
+            if order.add():
                 self.main_queue.append(order)            
                 logger.info("Order " + str(order.oid) + " added with success")
                 return True
             else:
-                logger.error("Error adding new order: " + str(e))
+                logger.error("Error adding new order")
                 order.status = 'CREATED'
         else:
             logger.warning("Order " + str(order.oid) + " is invalid: " + msg)
@@ -50,11 +45,11 @@ class orderManager():
 
     
     def reset_queue(self):
-        """Clears the queue and update orders status"""
+        """Clears the queue and updates orders status"""
         logger.info("Resetting order queue")
         for ordm in self.main_queue:
             ordm.status = 'CANCELLED'
-            if not orderm.save():
+            if not ordm.save():
                 logger.error("Cannot cancel order " + str(ordm.oid) + " on database")
         self.main_queue.clear()
             
@@ -114,12 +109,18 @@ class orderManager():
         if len(self.main_queue) > 0:
             logger.warning("Reloading non-empty order queue")
 
-        orders = btdata.order.get_by_status('ADDED')
+        orders = btorder.order.get_by_status('ADDED')
 
         if orders is not None:
             self.main_queue.clear()
             self.main_queue = collections.deque(orders)
             
-        
+
+            
+def validate_order(order):
+    """Indicates if order is valid and why not if it isn't"""
+    return True, ""
+
+
 
     
