@@ -1,6 +1,7 @@
-# My stuff
+# my stuff
 settings.py
 *~
+logs/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
