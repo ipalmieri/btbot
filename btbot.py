@@ -1,7 +1,9 @@
 from btorder import *
 from ordermngr import *
+from providers import mbitcoin
 import btools
 import btmodels
+
 
 logger = btools.logger
 
@@ -48,6 +50,15 @@ def main():
 
     
     #bt.reset_queue()
+
+    params = {
+        'tapi_method': 'list_orders',
+        'tapi_nonce': 1,
+        'coin_pair': 'BRLBTC'
+    }
+
+    mbitcoin.trade_request(params)
+
 
     
 if __name__ == '__main__':

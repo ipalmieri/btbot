@@ -17,6 +17,11 @@ BTDATA_PARAMS = {
     'password': 'PASS',
     'database': 'DATABASE'
 }
+
+MBTC_PARAMS = {
+    'tapi_id' : 'TAPID',
+    'tapi_secret' : 'TAPISEC'
+}
 EOF
 
 

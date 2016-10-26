@@ -17,11 +17,12 @@ class orderManager():
         self.open_orders = []
 
         
-    def add_broker(self, name, broker):
+    def set_broker(self, name, broker):
          """Adds broker to brokers dict"""
          self.broker_hub[name] = broker
+         logger.info("Broker " + name + " added to hub")
 
-        
+         
     def add_order(self, order):
         """Adds order to queue, validating it before"""
         logger.info("Adding order to the queue for execution")
