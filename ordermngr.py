@@ -17,10 +17,10 @@ class orderManager():
         self.open_orders = []
 
         
-    def set_broker(self, name, broker):
+    def set_broker(self, broker):
          """Adds broker to brokers dict"""
-         self.broker_hub[name] = broker
-         logger.info("Broker " + name + " added to hub")
+         self.broker_hub[broker.name] = broker
+         logger.info("Broker " + broker.name + " added to hub")
 
          
     def add_order(self, order):
@@ -57,23 +57,23 @@ class orderManager():
 
     def send_next(self):
         """Pops queue and tries to send next order"""
-        if len(main_queue) > 0:
+        if len(self.main_queue) > 0:
             order = self.main_queue.popleft()
-            if order.provider in broker_hub:
+            if order.provider in self.broker_hub:
                 # TODO Criar nova thread para enviar ordem
-                broker_hub[order.provider].execute_order(order)
+                self.broker_hub[order.provider].execute_order(order)
                 return
             else:
-                logger.error("Broker " + order.provider + " not available in the hub")
-            logger.warning("Restacking order " + str(order.oid) + " in main queue")
-            main_queue.append(order)
+                logger.error("Broker " + str(order.provider) + " not available in the hub")
+            logger.info("Restacking order " + str(order.oid) + " in main queue")
+            self.main_queue.append(order)
         else:
             logger.info("No order to send, empty queue")
             
             
     def flush_all(self):
         """Tries to send all orders in the current queue"""
-        count = len(main_queue)
+        count = len(self.main_queue)
         for i in range(0, count):
             self.send_next()
 

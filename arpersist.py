@@ -60,17 +60,15 @@ class dbCrud(baseCrud):
 
     
     def save(self, obj):
-        self.dbsession.add(obj)
+        nobj = self.dbsession.merge(obj)
         ret = dbcon.safe_commit(self.dbsession)
-        make_transient(obj)
         return ret
 
     
     def delete(self, obj):
-        obj = self.dbsession.merge(obj)
-        self.dbsession.delete(obj)
+        nobj = self.dbsession.merge(obj)
+        self.dbsession.delete(nobj)
         ret = dbcon.safe_commit(self.dbsession)
-        make_transient(obj)
         return ret
 
     

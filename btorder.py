@@ -1,5 +1,6 @@
 from sqlalchemy.orm.session import make_transient
 from sqlalchemy import *
+import json
 import btools, dbcon, arpersist
 
 logger = btools.logger
@@ -13,6 +14,7 @@ statusEnum = Enum('CREATED',
                   'EXECUTED',
                   'CANCELLED',
                   'INVALID',
+                  'FAILED',
                   name='ordstat')
 
 
@@ -28,7 +30,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
     asset = Column(String, ForeignKey('bsheet.asset'), nullable=False)
     exec_quantity = Column(btqntType, default=0)
     exec_price = Column(moneyType, default=0)
-    fees = Column(moneyType, default=0)
+    fees = Column(btqntType, default=0)
     status = Column(statusEnum, nullable=False)
     updated_ts = Column(TIMESTAMP, server_default=func.now(), onupdate=func.current_timestamp())
     created_ts = Column(TIMESTAMP, server_default=func.now())
@@ -39,7 +41,28 @@ class order(dbcon.baseModel, arpersist.baseAR):
     def __init__(self):
         self.status = 'CREATED'
 
-        
+    def decode_remote_info(self):
+        ret = {}
+        try:
+            if self.remote_info:
+                tmp = json.loads(self.remote_info)
+            else:
+                tmp = {}
+        except Exception, e:
+            logger.error ("Error decoding order " + str(self.oid) + " remote_info")
+        else:
+            ret = tmp
+        return ret
+            
+    def encode_remote_info(self, info):
+        try:
+            rinfo = json.dumps(info)
+        except Exception, e:
+            logger.error("Error encoding order " + str(self.oid) + " remote_info")
+            logger.debug("Info: " + str(info))
+        else:
+            self.remote_info = rinfo
+    
     @classmethod
     def get_by_id(cls, oid):
         s = dbcon.session()
@@ -47,7 +70,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
             ordr = s.query(order).filter(order.oid == oid).one()
             make_transient(ordr)
         except Exception, e:
-            logger.debug("Order " + str(oid) + " not found in database: " + str(e))
+            logger.error("Order get_by_id(" + str(oid) + ") error: " + str(e))
             ordr = None
         finally:
             s.close()
@@ -69,4 +92,3 @@ class order(dbcon.baseModel, arpersist.baseAR):
             s.expunge_all()
             s.close()
         return orders
-        

@@ -1,6 +1,7 @@
 from btorder import *
 from ordermngr import *
 from providers import mbitcoin
+import time
 import btools
 import btmodels
 
@@ -12,54 +13,42 @@ def main():
     btools.init_logging()
     dbcon.init_db()
     
-    logger.info("teste info")
-    logger.warning("teste warn")
-    logger.error("teste error")
-    logger.debug("teste debug")
 
     bt = orderManager()
+    #bt.reload_added_orders()
 
-  
+    mbprov = mbitcoin.mbProvider()
+    bt.set_broker(mbprov)
+    
+    
     ordm = order()
-    ordm.otype = 'BUY'
-    ordm.quantity = 1.056
-    ordm.price = 0.0001
+    ordm.otype = 'SELL'
+    ordm.quantity = 0.009
+    ordm.price = 2402.1
     ordm.asset = "BTC"
-
-
-    bt.reload_added_orders()
-
-    print str(ordm.oid) + ":" + ordm.status
-
-    s = dbcon.session()
+    ordm.provider = mbprov.name
     
-    #s.add(ordm)
-    #s.commit()
     bt.add_order(ordm)
+    bt.flush_all()
     
-    ordm2 = order.get_by_id(ordm.oid)
-
-    ordm2.status = 'CREATED'
-    #bt.add_order(ordm)
-
-    ordm2.oid = 1
-    ordm2 = ordm2.reload()
+    while ordm.status == 'ADDED':
+        time.sleep(1)
     
-    print str(ordm.oid) + ":" + ordm.status
-    print str(ordm2.oid) + ":" + ordm2.status
-
-    
-    #bt.reset_queue()
-
+    while True:
+        mbprov.update_order(ordm)
+        time.sleep(10)
+        if ordm.status == 'EXECUTED':
+            break
+        
     params = {
         'tapi_method': 'list_orders',
-        'tapi_nonce': 1,
+        'tapi_nonce': mbitcoin.get_nonce(),
         'coin_pair': 'BRLBTC'
     }
 
-    mbitcoin.trade_request(params)
-
-
+    #a = mbitcoin.trade_request(params)
+    #mbitcoin.validate_response(a)
+    #print a
     
 if __name__ == '__main__':
     main()
