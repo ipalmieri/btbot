@@ -144,8 +144,9 @@ def request_and_update(params, ordr, trials, interval):
                     updated = True
     else:
         logger.error("Request failed")
-        ordr.status = 'FAILED'
-        ordr.save()
+        if ordr.status == 'ADDED':
+            ordr.status = 'FAILED'
+            ordr.save()
     if updated:
         logger.info("Order " + str(ordr.oid) + " updated")
     else:

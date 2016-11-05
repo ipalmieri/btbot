@@ -81,7 +81,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
     def get_by_status(cls, status):
         s = dbcon.session()
         try:
-            qry = s.query(order).filter(order.status == 'ADDED')
+            qry = s.query(order).filter(order.status == status)
             orders = qry.order_by(order.updated_ts).all()
         except Exception, e:
             logger.error("Error getting order list: " + str(e))
