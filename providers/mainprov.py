@@ -7,7 +7,8 @@ class baseProvider:
     __metaclass__ = ABCMeta
 
     def __init__(self):
-        self.name = ""
+        self.name = ''
+        self.currency = ''
         
     @abstractmethod
     def execute_order(self, ordr):
@@ -21,6 +22,7 @@ class baseProvider:
     def update_order(self, ordr):
         pass
 
+    @abstractmethod
     def validate_order(self, ordr):
-        return False
+        pass
     

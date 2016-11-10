@@ -36,7 +36,8 @@ class mbProvider(baseProvider):
 
     def __init__(self):
         baseProvider.__init__(self)
-        self.name = "MBITCOIN"
+        self.name = 'MBITCOIN'
+        self.currency = 'BRL'
         self.req_trials = DEF_REQ_TRIALS
         self.req_interval = DEF_REQ_INTERVAL
         self.threads = []
@@ -85,7 +86,7 @@ class mbProvider(baseProvider):
         params = {
             'tapi_method': 'cancel_order',
             'tapi_nonce': get_nonce(),
-            'coin_pair': 'BRL' + ordr.asset,
+            'coin_pair': self.currency + ordr.asset,
             'order_id': rinfo['order_id']
         }
 
@@ -109,7 +110,7 @@ class mbProvider(baseProvider):
         params = {
             'tapi_method': 'get_order',
             'tapi_nonce': get_nonce(),
-            'coin_pair': 'BRL' + ordr.asset,
+            'coin_pair': self.currency + ordr.asset,
             'order_id': rinfo['order_id']
         }
 
@@ -207,6 +208,7 @@ def process_mb_order(mbdata, ordr):
     # Save remote information for reference
     ordr.encode_remote_info(mbdata)
     return True
+
 
 
 def validate_response(resp):
