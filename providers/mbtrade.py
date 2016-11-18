@@ -10,7 +10,7 @@ import urllib
 import datetime
 from collections import OrderedDict, deque
 from decimal import Decimal
-from mainprov import *
+from btprovider import *
 import btools, settings
 
 #Global variables
@@ -289,15 +289,15 @@ def trade_request(params):
     conn = None
     try:
         conn = httplib.HTTPSConnection(REQUEST_HOST, timeout=HTTPCON_TIMEOUT)
-        conn.request("POST", REQUEST_PATH, eparams, headers)
+        conn.request('POST', REQUEST_PATH, eparams, headers)
 
-        # Print response data to console
-        response = conn.getresponse()
-        response = response.read()
+        # Pre-process response
+        resp = conn.getresponse()
+        data = resp.read()
         
         # É fundamental utilizar a classe OrderedDict para preservar a ordem dos elementos
-        response_json = json.loads(response, object_pairs_hook=OrderedDict)
-        logger.debug("Response status: " + str(response_json['status_code']))
+        response_json = json.loads(data, object_pairs_hook=OrderedDict)
+        logger.debug("trade_request status: " + str(resp.status) + " " + str(resp.reason))
         #print "status: %s" % response_json['status_code']
         #print(json.dumps(response_json, indent=4))
     except Exception as e:
