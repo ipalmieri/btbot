@@ -11,16 +11,10 @@ class bsheet(dbcon.baseModel):
     qnt_comm = Column(btqntType)
 
         
-class btQuote:
+class dataQuote:
     def __init__(self, dt, value):
         self.datetime = dt
         self.value = value
 
-
-class btTrade:
-    def __init__(self):
-        self.date = None
-        self.price = None
-        self.volume = None
-        self.id = None
-        self.type = None
+    def __str__(self):
+        return str(self.datetime) + " " + str(self.value)

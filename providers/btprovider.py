@@ -40,7 +40,7 @@ class baseInfo:
         self.currency = ''
         
     @abstractmethod
-    def last_price(self, asset):
+    def last_quote(self, asset):
         pass
 
     

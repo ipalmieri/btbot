@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import threading
 import time
 import hashlib
@@ -276,7 +274,7 @@ def trade_request(params):
     H.update(params_string)
     tapi_mac = H.hexdigest()
 
-    # Gerar cabeçalho da requisição
+    # Create request header
     headers = {
         'Content-type': 'application/x-www-form-urlencoded',
         'TAPI-ID': settings.MBTC_PARAMS['tapi_id'],
@@ -284,7 +282,7 @@ def trade_request(params):
     }
 
     logger.debug("Making tapi request to " + REQUEST_HOST + params_string)
-    # Realizar requisição POST
+
     ret = None
     conn = None
     try:
@@ -295,11 +293,9 @@ def trade_request(params):
         resp = conn.getresponse()
         data = resp.read()
         
-        # É fundamental utilizar a classe OrderedDict para preservar a ordem dos elementos
+        # Utilizar a classe OrderedDict para preservar a ordem dos elementos
         response_json = json.loads(data, object_pairs_hook=OrderedDict)
         logger.debug("trade_request status: " + str(resp.status) + " " + str(resp.reason))
-        #print "status: %s" % response_json['status_code']
-        #print(json.dumps(response_json, indent=4))
     except Exception as e:
         logger.error("Failed tapi request: " + str(e))
     else:

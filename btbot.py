@@ -13,9 +13,10 @@ def main():
     btools.init_logging()
     dbcon.init_db()
     
+    bif = mbinfo.mbInfo()
 
-    dat = mbinfo.info_request('ticker')
-
+    dat = bif.last_quote('BTC')
+    
     print dat
 
 
