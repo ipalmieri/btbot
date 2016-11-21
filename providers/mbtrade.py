@@ -10,6 +10,7 @@ from collections import OrderedDict, deque
 from decimal import Decimal
 from btprovider import *
 import btools, settings
+import btmodels
 
 #Global variables
 logger = btools.logger
@@ -21,8 +22,8 @@ REQUEST_PATH = '/tapi/v3/'
 HTTPCON_TIMEOUT = 60 # http connection timeout in secs
 MAX_TRADE_COUNT = 60 # maximum number of trades within interval
 MAX_TRADE_INTERVAL = 60 # interval in secs for maximum trade count
-DEF_REQ_TRIALS = 10 # maximum number of trials for a request
-DEF_REQ_INTERVAL = 60  # interval between successive trials
+REQ_TRIALS = 10 # maximum number of trials for a request
+REQ_INTERVAL = 60  # interval between successive trials
 MB_STATUS_TABLE = {2: 'OPEN',
                    3: 'CANCELLED',
                    4: 'EXECUTED'}
@@ -36,9 +37,11 @@ class mbProvider(baseProvider):
         baseProvider.__init__(self)
         self.name = 'MBITCOIN'
         self.currency = 'BRL'
-        self.req_trials = DEF_REQ_TRIALS
-        self.req_interval = DEF_REQ_INTERVAL
         self.threads = []
+        #self.fundsTable = {}
+        self.fundsTable[self.currency] = btmodels.fundValues()
+        
+        self.update_funds()
 
         
     def validate_order(self, ordr):
@@ -46,80 +49,151 @@ class mbProvider(baseProvider):
 
     
     def execute_order(self, ordr):
-
         if not self.validate_order(ordr):
-            return 
-
-        tmethod = ''
-        if ordr.otype == 'BUY':
-            tmethod = 'place_buy_order'
-        elif ordr.otype == 'SELL':
-            tmethod = 'place_sell_order'
-
-        params = {
-            'tapi_method': tmethod,
-            'tapi_nonce': get_nonce(),
-            'coin_pair': 'BRL' + ordr.asset,
-            'quantity': str(ordr.quantity),
-            'limit_price': str(ordr.price)
-        }
-
+            return
         logger.info("Starting new thread to execute order " + str(ordr.oid))
-        t = threading.Thread(target=request_and_update,
-                             args=[params, ordr,
-                                   self.req_trials, self.req_interval])
+        t = threading.Thread(target=execute_order_thread, args=[ordr])
         self.threads.append(t)
         t.start()
         
 
     def cancel_order(self, ordr):
-
-        rinfo = ordr.decode_remote_info()
-
-        if 'order_id' not in rinfo:
-            logger.error("Error canceling order " + str(ordr.oid)
-                         + ": missing order_id in remote_info")
-            return
-    
-        params = {
-            'tapi_method': 'cancel_order',
-            'tapi_nonce': get_nonce(),
-            'coin_pair': self.currency + ordr.asset,
-            'order_id': rinfo['order_id']
-        }
-
         logger.info("Starting new thread to cancel order " + str(ordr.oid))
-        t = threading.Thread(target=request_and_update,
-                             args=[params, ordr,
-                                   self.req_trials, self.req_interval])
+        t = threading.Thread(target=cancel_order_thread, args=[ordr])
         self.threads.append(t)
         t.start()
 
         
     def update_order(self, ordr):
-
-        rinfo = ordr.decode_remote_info()
-
-        if 'order_id' not in rinfo:
-            logger.error("Error updating order " + str(ordr.oid)
-                         + ": missing order_id in remote_info")
-            return
-    
-        params = {
-            'tapi_method': 'get_order',
-            'tapi_nonce': get_nonce(),
-            'coin_pair': self.currency + ordr.asset,
-            'order_id': rinfo['order_id']
-        }
-
         logger.info("Starting new thread to update order " + str(ordr.oid))
-        t = threading.Thread(target=request_and_update,
-                             args=[params, ordr,
-                                   self.req_trials, self.req_interval])
+        t = threading.Thread(target=update_order_thread, args=[ordr])
         self.threads.append(t)
         t.start()
 
 
+    def update_funds(self):
+        logger.info("Starting new thread to update funds information")
+        t = threading.Thread(target=update_funds_thread, args=[self])
+        self.threads.append(t)
+        t.start()
+
+        
+
+
+
+
+def execute_order_thread(ordr):
+    
+    tmethod = ''
+    if ordr.otype == 'BUY':
+        tmethod = 'place_buy_order'
+    elif ordr.otype == 'SELL':
+        tmethod = 'place_sell_order'
+        
+    params = {
+        'tapi_method': tmethod,
+        'tapi_nonce': get_nonce(),
+        'coin_pair': 'BRL' + ordr.asset,
+        'quantity': str(ordr.quantity),
+        'limit_price': str(ordr.price)
+    }
+
+    resp = request_until_fail(params, REQ_TRIALS, REQ_INTERVAL)
+    
+    if validate_response(resp):
+        logger.info("Order " + str(ordr.oid) + " sent for execution")
+        if 'response_data' in resp:
+            if 'order' in resp['response_data']:
+                process_and_update(resp['response_data']['order'], ordr)
+    else:
+        logger.error("Execution of order " + str(ordr.oid) + " failed")
+        ordr.status = 'FAILED'
+        ordr.save()
+
+
+
+def cancel_order_thread(ordr):
+
+    rinfo = ordr.decode_remote_info()
+    
+    if 'order_id' not in rinfo:
+        logger.error("Error canceling order " + str(ordr.oid)
+                     + ": missing order_id in remote_info")
+        return
+        
+    params = {
+        'tapi_method': 'cancel_order',
+        'tapi_nonce': get_nonce(),
+        'coin_pair': self.currency + ordr.asset,
+        'order_id': rinfo['order_id']
+    }
+    
+    resp = request_until_fail(params, REQ_TRIALS, REQ_INTERVAL)
+
+    if validate_response(resp):
+        logger.info("Order " + str(ordr.oid) + " cancelled")
+        if 'response_data' in resp:
+            if 'order' in resp['response_data']:
+                process_and_update(resp['response_data']['order'], ordr)
+    else:
+        logger.error("Order " + str(ordr.oid) + " not cancelled")        
+                
+                    
+        
+def update_order_thread(ordr):
+
+    rinfo = ordr.decode_remote_info()
+    
+    if 'order_id' not in rinfo:
+        logger.error("Error updating order " + str(ordr.oid)
+                     + ": missing order_id in remote_info")
+        return
+    
+    params = {
+        'tapi_method': 'get_order',
+        'tapi_nonce': get_nonce(),
+        'coin_pair': self.currency + ordr.asset,
+        'order_id': rinfo['order_id']
+    }
+    
+    resp = request_until_fail(params, REQ_TRIALS, REQ_INTERVAL)
+
+    if validate_response(resp):
+        if 'response_data' in resp:
+            if 'order' in resp['response_data']:
+                process_and_update(resp['response_data']['order'], ordr)
+
+
+
+def update_funds_thread(provider):
+
+    ftable = provider.fundsTable
+    
+    params = {
+        'tapi_method': 'get_account_info',
+        'tapi_nonce': get_nonce()
+    }
+
+    resp = request_until_fail(params, REQ_TRIALS, REQ_INTERVAL)
+    
+    if validate_response(resp):
+        if 'response_data' in resp:
+            if 'balance' in resp['response_data']:
+                fund_dict = resp['response_data']['balance']
+                for a in fund_dict:
+                    asset = a.upper()
+                    ainfo = fund_dict[a]
+                    if 'total' in ainfo and 'available' in ainfo:
+                        ftable[asset] = btmodels.fundValues()
+                        ftable[asset].total = Decimal(ainfo['total'])
+                        ftable[asset].available = Decimal(ainfo['available'])
+                        ftable[asset].tradable = Decimal(0)
+                        ftable[asset].expected = Decimal(0)
+                        
+    provider.recalculate_funds()
+
+
+        
             
 def get_nonce():
     new_nonce = int(time.time())
@@ -130,30 +204,16 @@ def get_nonce():
 get_nonce.last = 0
 
 
-
-def request_and_update(params, ordr, trials, interval):
+def process_and_update(mbdata, ordr):
     
-    resp = request_until_fail(params, trials, interval)
-    updated = False
-    if validate_response(resp):
-        if 'response_data' in resp:
-            if 'order' in resp['response_data']:
-                if process_mb_order(resp['response_data']['order'], ordr):
-                    ordr.save()
-                    updated = True
-    else:
-        logger.error("Request failed")
-        if ordr.status == 'ADDED':
-            ordr.status = 'FAILED'
-            ordr.save()
-    if updated:
+    if process_order_data(mbdata, ordr):
+        ordr.save()
         logger.info("Order " + str(ordr.oid) + " updated")
     else:
         logger.warning("Order " + str(ordr.oid) + " not updated")
-                    
 
         
-def process_mb_order(mbdata, ordr):
+def process_order_data(mbdata, ordr):
 
     rinfo = ordr.decode_remote_info()
 

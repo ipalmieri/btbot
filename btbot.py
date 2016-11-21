@@ -14,10 +14,14 @@ def main():
     dbcon.init_db()
     
     bif = mbinfo.mbInfo()
-
-    dat = bif.last_quote('BTC')
+    btd = mbtrade.mbProvider()
     
-    print dat
+    #btd.update_funds()
+
+    time.sleep(10)
+
+    for asset, funds in btd.fundsTable.iteritems():
+        print asset, funds.total, funds.available, funds.tradable, funds.expected
 
 
     

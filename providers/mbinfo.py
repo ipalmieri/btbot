@@ -15,7 +15,7 @@ api_min_dt = 30
 
 # Constants
 REQUEST_HOST = 'www.mercadobitcoin.net'
-REQUEST_PATH = '/api/'  # v2 = last 24h | v1 = since past midnight
+REQUEST_PATH = '/api/'  # /api/v2/ = last 24h | /api/v1/ = since past midnight
 HTTPCON_TIMEOUT = 60 # http connection timeout in secs
 
 
@@ -31,15 +31,17 @@ class mbInfo(baseInfo):
 
     def last_quote(self, asset):
 
-        ilist = []
+        tcmd = ""
         if asset == 'BTC':
-            ilist = cached_info_request('trades')
+            tcmd = 'trades'
         elif asset == 'LTC':
-            ilist = cached_info_request('trades_litecoin')
+            tcmd = 'trades_litecoin'
         else:
             logger.error("Invalid asset " + str(asset))
             return None
 
+        ilist = cached_info_request(tcmd)
+        
         if len(ilist) > 0:
             if 'date' in ilist[0] and 'price' in ilist[0]:
                 rdate = datetime.datetime.fromtimestamp(ilist[0]['date'])
@@ -47,8 +49,39 @@ class mbInfo(baseInfo):
                 return dataQuote(rdate, rprice)
         logger.error("Error reading info response")
         return None
-        
 
+
+    def trade_list(self, asset, maxlen=1):
+
+        ret = []
+        
+        if asset == 'BTC':
+            tcmd = 'trades'
+        elif asset == 'LTC':
+            tcmd = 'trades_litecoin'
+        else:
+            logger.error("Invalid asset " + str(asset))
+            return ret
+
+        ilist = cached_info_request(tcmd)
+
+        count = 0
+        for l in ilist:
+            if len(ret) >= maxlen:
+                break
+
+            if 'date' in l and 'price' in l:
+                rdate = datetime.datetime.fromtimestamp(l['date'])
+                rprice = l['price']
+                ret.append(dataQuote(rdate, rprice))
+            
+        if len(ret) != maxlen:
+            logger.warning("Returning " + str(len(ret)) + "/" + str(maxlen)
+                           + " points")
+        return ret
+
+
+        
     
 def cached_info_request(command):
 
@@ -63,10 +96,10 @@ def cached_info_request(command):
         
         if dt < api_min_dt:
             if command in api_cache:
-                logger.debug("Cached info request with command [" + command + "]")
+                logger.debug("Cached info request with command \'" + command + "\'")
                 return api_cache[command]
 
-    logger.debug("New info request with command [" + command + "]")
+
     ret = info_request(command)
     
     if ret:
@@ -79,6 +112,8 @@ def cached_info_request(command):
 
 # Returns a dict containing the web API response
 def info_request(command):
+
+    logger.debug("Making api request to " + REQUEST_HOST + REQUEST_PATH + command + '/')
 
     ret = None
     conn = None
