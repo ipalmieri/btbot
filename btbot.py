@@ -1,6 +1,6 @@
 from btorder import *
 from ordermngr import *
-from providers import mbtrade, mbinfo
+from providers import mbinfo, mbtrade
 import time
 import btools
 import btmodels
@@ -12,15 +12,25 @@ def main():
 
     btools.init_logging()
     dbcon.init_db()
-    
+
+    mng = orderManager()
     bif = mbinfo.mbInfo()
     btd = mbtrade.mbProvider()
+    mng.add_provider(btd)
     
-    #btd.update_funds()
-
+    ordm = order()
+    ordm.otype = 'SELL'
+    ordm.quantity = 0.009
+    ordm.price = 2602.1
+    ordm.asset = "BTC"
+    ordm.provider = btd.name
+    
+    #mng.add_order(ordm)
+    mng.flush_all()
+                                
     time.sleep(10)
 
-    for asset, funds in btd.fundsTable.iteritems():
+    for asset, funds in btd.funds_table.iteritems():
         print asset, funds.total, funds.available, funds.tradable, funds.expected
 
 

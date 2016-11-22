@@ -1,5 +1,5 @@
 from abc import ABCMeta, abstractmethod
-import btorder
+import btorder, btmodels
 
 
 
@@ -11,7 +11,7 @@ class baseProvider:
     def __init__(self):
         self.name = ''
         self.currency = ''
-        self.fundsTable = {}
+        self.funds_table = {}
         
     @abstractmethod
     def validate_order(self, ordr):
@@ -33,30 +33,29 @@ class baseProvider:
     def update_funds(self):
         pass
 
-    def recalculate_funds(self):
+    def get_funds(self, asset):
+        """Returns the funds available of a given asset"""
+        if asset in self.funds_table:
+            return funds_table[asset]
+        return btmodels.fundValues()
 
-        for asset, funds in self.fundsTable.iteritems():
+    
+    def recalculate_funds(self):
+        """Recalculate tradable and expected funds"""
+        for asset, funds in self.funds_table.iteritems():
             funds.tradable = funds.available
             funds.expected = funds.available
-        
-
         added_list = btorder.order.get_by_status('ADDED')
-        open_list = btorder.order.get_by_status('OPEN')
-
-        ordr_list = added_list + open_list
-        
-        for ordr in ordr_list:
+        for ordr in added_list:
             if ordr.provider == self.name:
                 asset_origin = self.currency
                 asset_target = ordr.asset
-
-                if asset_origin in self.fundsTable:
-                    if asset_target in self.fundsTable:
-                        forigin = fundsTable[asset_origin]
-                        ftarget = fundsTable[asset_target]
-                        qnt = ordr.quantity - ordr.exec_quantity
+                if asset_origin in self.funds_table:
+                    if asset_target in self.funds_table:
+                        forigin = self.funds_table[asset_origin]
+                        ftarget = self.funds_table[asset_target]
+                        qnt = ordr.quantity
                         value = ordr.price*qnt
-
                         if ordr.otype == 'BUY':
                             forigin.tradable = forigin.tradable - value
                             forigin.expected = forigin.expected - value
@@ -65,7 +64,21 @@ class baseProvider:
                             ftarget.tradable = ftarget.tradable - qnt
                             ftarget.expected = ftarget.expected - qnt
                             forigin.expected = forigin.expected + value
-
+        open_list = btorder.order.get_by_status('OPEN')
+        for ordr in open_list:
+            if ordr.provider == self.name:
+                asset_origin = self.currency
+                asset_target = ordr.asset
+                if asset_origin in self.funds_table:
+                    if asset_target in self.funds_table:
+                        forigin = self.funds_table[asset_origin]
+                        ftarget = self.funds_table[asset_target]
+                        qnt = ordr.quantity - ordr.exec_quantity
+                        value = ordr.price*qnt
+                        if ordr.otype == 'BUY':
+                             ftarget.expected = ftarget.expected + qnt
+                        elif ordr.otype == 'SELL':
+                            forigin.expected = forigin.expected + value
 
     
 class baseInfo:

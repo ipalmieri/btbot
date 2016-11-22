@@ -38,9 +38,9 @@ class mbProvider(baseProvider):
         self.name = 'MBITCOIN'
         self.currency = 'BRL'
         self.threads = []
-        #self.fundsTable = {}
-        self.fundsTable[self.currency] = btmodels.fundValues()
-        
+        #self.funds_table = {}
+        self.funds_table[self.currency] = btmodels.fundValues()
+
         self.update_funds()
 
         
@@ -77,11 +77,8 @@ class mbProvider(baseProvider):
         self.threads.append(t)
         t.start()
 
+
         
-
-
-
-
 def execute_order_thread(ordr):
     
     tmethod = ''
@@ -166,32 +163,29 @@ def update_order_thread(ordr):
 
 
 def update_funds_thread(provider):
-
-    ftable = provider.fundsTable
     
     params = {
         'tapi_method': 'get_account_info',
         'tapi_nonce': get_nonce()
     }
 
+    ftable = provider.funds_table
     resp = request_until_fail(params, REQ_TRIALS, REQ_INTERVAL)
-    
+
     if validate_response(resp):
         if 'response_data' in resp:
             if 'balance' in resp['response_data']:
                 fund_dict = resp['response_data']['balance']
-                for a in fund_dict:
+                for a, ainfo in fund_dict.iteritems():
                     asset = a.upper()
-                    ainfo = fund_dict[a]
                     if 'total' in ainfo and 'available' in ainfo:
                         ftable[asset] = btmodels.fundValues()
                         ftable[asset].total = Decimal(ainfo['total'])
                         ftable[asset].available = Decimal(ainfo['available'])
                         ftable[asset].tradable = Decimal(0)
                         ftable[asset].expected = Decimal(0)
-                        
     provider.recalculate_funds()
-
+    logger.info("Funds recalculated for provider " + provider.name)
 
         
             
@@ -204,6 +198,7 @@ def get_nonce():
 get_nonce.last = 0
 
 
+
 def process_and_update(mbdata, ordr):
     
     if process_order_data(mbdata, ordr):
@@ -212,6 +207,7 @@ def process_and_update(mbdata, ordr):
     else:
         logger.warning("Order " + str(ordr.oid) + " not updated")
 
+        
         
 def process_order_data(mbdata, ordr):
 

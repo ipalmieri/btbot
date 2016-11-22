@@ -13,35 +13,28 @@ class orderManager():
     def __init__(self):
         """Default constructor with empty structures"""
         self.main_queue = collections.deque()
-        self.broker_hub = {}
+        self.provider_hub = {}
         self.open_orders = []
 
         
-    def set_broker(self, broker):
+    def add_provider(self, broker):
          """Adds broker to brokers dict"""
-         self.broker_hub[broker.name] = broker
-         logger.info("Broker " + broker.name + " added to hub")
+         self.provider_hub[broker.name] = broker
+         logger.info("Provider " + broker.name + " added to hub")
 
          
     def add_order(self, order):
         """Adds order to queue, validating it before"""
         logger.info("Adding order to the queue for execution")
-        if order.status != 'CREATED':
-            logger.warning("Order " + str(order.oid) + " is in state " +
-                           order.status + " and was not added")
-            return False
-        isvalid, msg = validate_order(order)
+        isvalid = self._validate_new_order(order)
         if isvalid:
             order.status = 'ADDED'
             if order.add():
                 self.main_queue.append(order)            
                 logger.info("Order " + str(order.oid) + " added with success")
                 return True
-            else:
-                logger.error("Error adding new order")
-                order.status = 'CREATED'
-        else:
-            logger.warning("Order " + str(order.oid) + " is invalid: " + msg)
+        logger.error("Error adding new order")
+        order.status = 'FAILED'
         return False
 
     
@@ -51,7 +44,8 @@ class orderManager():
         for ordm in self.main_queue:
             ordm.status = 'CANCELLED'
             if not ordm.save():
-                logger.error("Cannot cancel order " + str(ordm.oid) + " on database")
+                logger.error("Cannot cancel order "
+                             + str(ordm.oid) + " on database")
         self.main_queue.clear()
             
 
@@ -59,12 +53,12 @@ class orderManager():
         """Pops queue and tries to send next order"""
         if len(self.main_queue) > 0:
             order = self.main_queue.popleft()
-            if order.provider in self.broker_hub:
-                # TODO Criar nova thread para enviar ordem
-                self.broker_hub[order.provider].execute_order(order)
+            if order.provider in self.provider_hub:
+                self.provider_hub[order.provider].execute_order(order)
                 return
             else:
-                logger.error("Broker " + str(order.provider) + " not available in the hub")
+                logger.error("Broker " + str(order.provider)
+                             + " not available in the hub")
             logger.info("Restacking order " + str(order.oid) + " in main queue")
             self.main_queue.append(order)
         else:
@@ -86,11 +80,12 @@ class orderManager():
             return 
         if order.status == 'OPEN':
             # If already open, let the broker cancel it
-            if order.provider in broker_hub:
+            if order.provider in provider_hub:
                 # TODO criar nova thread para cancelar ordem
-                broker_hub[order.provider].cancel_order(order)
+                provider_hub[order.provider].cancel_order(order)
             else:
-                logger.error("No provider to cancel open order " + str(order.oid))
+                logger.error("No provider to cancel open order "
+                             + str(order.oid))
         else:
             last_status = order.status
             order.status = 'CANCELLED'
@@ -102,25 +97,56 @@ class orderManager():
                 logger.info("Order " + str(order.oid) + " cancelled")
             else:
                 order.status = last_status
-                logger.error("Can't cancel order " + str(order.oid) + ": " + str(e))
+                logger.error("Can't cancel order " + str(order.oid)
+                             + ": " + str(e))
 
 
     def reload_added_orders(self):
         """Reloads all ADDED orders into queue"""
         if len(self.main_queue) > 0:
             logger.warning("Reloading non-empty order queue")
-
         orders = btorder.order.get_by_status('ADDED')
-
         if orders is not None:
             self.main_queue.clear()
             self.main_queue = collections.deque(orders)
             
 
             
-def validate_order(order):
-    """Indicates if order is valid and why not if it isn't"""
-    return True, ""
+    def _validate_new_order(self, order):
+        """Indicates if order is valid and why not if it isn't"""
+        isvalid = True
+        logger.info("Validating new order")
+
+        # Check: order must be recently created
+        if order.status != 'CREATED':
+            logger.error("Order being added is in state " + order.status)
+            isvalid = False
+
+        # Check: buy or sell order type
+        if order.otype != 'SELL' and order.otype != 'BUY':
+            logger.error("Order has invalid type: " + str(order.otype))
+            isvalid = False
+
+        # Check: provider has needed funds
+        if order.provider in self.provider_hub:
+            provid = self.provider_hub[order.provider]
+            if order.otype == 'SELL':
+                asset_needed = order.asset
+                funds_needed = order.quantity
+            else:
+                asset_needed = provider.currency
+                funds_needed = order.price * order.quantity
+            funds_tradable = provid.get_funds(asset_needed).tradable
+            if funds_needed > funds_tradable:
+                logger.warning("Provider doesn't have funds for order")
+                #isvalid = False
+        else:
+            logger.warning("Provider is not available for this order")
+            #isvalid = False
+
+        if not isvalid:
+            logger.warning("Order " + str(order.oid) + " is invalid")
+        return isvalid
 
 
 

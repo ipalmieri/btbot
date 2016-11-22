@@ -27,7 +27,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
     provider = Column(String)
     quantity = Column(btqntType, nullable=False)
     price = Column(moneyType, nullable=False)
-    asset = Column(String, ForeignKey('bsheet.asset'), nullable=False)
+    asset = Column(String, nullable=False)
     exec_quantity = Column(btqntType, default=0)
     exec_price = Column(moneyType, default=0)
     fees = Column(btqntType, default=0)
