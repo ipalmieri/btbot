@@ -17,7 +17,7 @@ logger = btools.logger
 trade_timestamp = deque()
 
 # Constants
-REQUEST_HOST = 'www.mercadobitcoin.net'
+REQUEST_HOST = 'www.mercadobitcoin.neta'
 REQUEST_PATH = '/tapi/v3/'
 HTTPCON_TIMEOUT = 60 # http connection timeout in secs
 MAX_TRADE_COUNT = 60 # maximum number of trades within interval
@@ -36,20 +36,17 @@ class mbProvider(baseProvider):
     def __init__(self):
         baseProvider.__init__(self)
         self.name = 'MBITCOIN'
-        self.currency = 'BRL'
         self.threads = []
         #self.funds_table = {}
-        self.funds_table[self.currency] = btmodels.fundValues()
-
         self.update_funds()
-
-        
-    def validate_order(self, ordr):
-        return True
 
     
     def execute_order(self, ordr):
         if not self.validate_order(ordr):
+            logger.warning("Order " + str(ordr.oid) + " failed at provider "
+                           + self.name)
+            ordr.status='FAILED'
+            ordr.save()
             return
         logger.info("Starting new thread to execute order " + str(ordr.oid))
         t = threading.Thread(target=execute_order_thread, args=[ordr])
@@ -90,7 +87,7 @@ def execute_order_thread(ordr):
     params = {
         'tapi_method': tmethod,
         'tapi_nonce': get_nonce(),
-        'coin_pair': 'BRL' + ordr.asset,
+        'coin_pair': ordr.currency + ordr.asset,
         'quantity': str(ordr.quantity),
         'limit_price': str(ordr.price)
     }
@@ -121,7 +118,7 @@ def cancel_order_thread(ordr):
     params = {
         'tapi_method': 'cancel_order',
         'tapi_nonce': get_nonce(),
-        'coin_pair': self.currency + ordr.asset,
+        'coin_pair': ordr.currency + ordr.asset,
         'order_id': rinfo['order_id']
     }
     
@@ -149,7 +146,7 @@ def update_order_thread(ordr):
     params = {
         'tapi_method': 'get_order',
         'tapi_nonce': get_nonce(),
-        'coin_pair': self.currency + ordr.asset,
+        'coin_pair': ordr.currency + ordr.asset,
         'order_id': rinfo['order_id']
     }
     

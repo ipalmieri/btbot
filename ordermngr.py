@@ -62,7 +62,7 @@ class orderManager():
             logger.info("Restacking order " + str(order.oid) + " in main queue")
             self.main_queue.append(order)
         else:
-            logger.info("No order to send, empty queue")
+            logger.debug("No order to send, empty queue")
             
             
     def flush_all(self):
@@ -127,21 +127,9 @@ class orderManager():
             logger.error("Order has invalid type: " + str(order.otype))
             isvalid = False
 
-        # Check: provider has needed funds
-        if order.provider in self.provider_hub:
-            provid = self.provider_hub[order.provider]
-            if order.otype == 'SELL':
-                asset_needed = order.asset
-                funds_needed = order.quantity
-            else:
-                asset_needed = provider.currency
-                funds_needed = order.price * order.quantity
-            funds_tradable = provid.get_funds(asset_needed).tradable
-            if funds_needed > funds_tradable:
-                logger.warning("Provider doesn't have funds for order")
-                #isvalid = False
-        else:
-            logger.warning("Provider is not available for this order")
+        # Check: provider exists
+        if order.provider not in self.provider_hub:
+            logger.warning("Provider " + order.provider + " is not available")
             #isvalid = False
 
         if not isvalid:

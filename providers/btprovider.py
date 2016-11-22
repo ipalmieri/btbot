@@ -1,6 +1,8 @@
 from abc import ABCMeta, abstractmethod
-import btorder, btmodels
+import btorder, btools
+import btmodels
 
+logger = btools.logger
 
 
 class baseProvider:
@@ -10,33 +12,61 @@ class baseProvider:
 
     def __init__(self):
         self.name = ''
-        self.currency = ''
         self.funds_table = {}
-        
-    @abstractmethod
-    def validate_order(self, ordr):
-        pass
+
         
     @abstractmethod
     def execute_order(self, ordr):
         pass
 
+    
     @abstractmethod
     def cancel_order(self, ordr):
         pass
+
     
     @abstractmethod
     def update_order(self, ordr):
         pass
 
+    
     @abstractmethod
     def update_funds(self):
         pass
 
+    
+    def validate_order(self, ordr):
+        """Returns True if order is expected to succeed"""
+        is_valid = True
+        # Check: provider has needed funds
+        if ordr.otype == 'SELL':
+            asset_needed = ordr.asset
+            funds_needed = ordr.quantity
+        else:
+            asset_needed = ordr.currency
+            funds_needed = ordr.price * ordr.quantity
+        funds_tradable = self.get_funds(asset_needed).tradable
+        if ordr.asset not in self.funds_table:
+            logger.warning("Asset " + ordr.asset + " not available at provider")
+            is_valid = False
+        if ordr.currency not in self.funds_table:
+            logger.warning("Currency " + ordr.currency +
+                           " not available at provider")
+            is_valid = False
+        if funds_needed > funds_tradable:
+            logger.warning("Provider doesn't have funds for order")
+            is_valid = False
+        if not is_valid:
+            logger.warning("Order " + str(ordr.oid) +
+                           " is not valid at provider" + ordr.provider)
+        return is_valid
+
+    
+    
     def get_funds(self, asset):
         """Returns the funds available of a given asset"""
         if asset in self.funds_table:
-            return funds_table[asset]
+            return self.funds_table[asset]
         return btmodels.fundValues()
 
     
@@ -48,7 +78,7 @@ class baseProvider:
         added_list = btorder.order.get_by_status('ADDED')
         for ordr in added_list:
             if ordr.provider == self.name:
-                asset_origin = self.currency
+                asset_origin = ordr.currency
                 asset_target = ordr.asset
                 if asset_origin in self.funds_table:
                     if asset_target in self.funds_table:
@@ -67,7 +97,7 @@ class baseProvider:
         open_list = btorder.order.get_by_status('OPEN')
         for ordr in open_list:
             if ordr.provider == self.name:
-                asset_origin = self.currency
+                asset_origin = ordr.currency
                 asset_target = ordr.asset
                 if asset_origin in self.funds_table:
                     if asset_target in self.funds_table:

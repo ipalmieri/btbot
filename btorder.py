@@ -28,6 +28,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
     quantity = Column(btqntType, nullable=False)
     price = Column(moneyType, nullable=False)
     asset = Column(String, nullable=False)
+    currency = Column(String, nullable=False)
     exec_quantity = Column(btqntType, default=0)
     exec_price = Column(moneyType, default=0)
     fees = Column(btqntType, default=0)

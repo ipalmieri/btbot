@@ -41,10 +41,15 @@ class dbCrud(baseCrud):
 
         
     def add(self, obj):
-        self.dbsession.add(obj)
-        ret = dbcon.safe_commit(self.dbsession)
-        self.dbsession.refresh(obj)
-        make_transient(obj)
+        ret = False
+        try: 
+            self.dbsession.add(obj)
+            ret = dbcon.safe_commit(self.dbsession)
+            self.dbsession.refresh(obj)
+        except Exception, e:
+            logger.error("Error adding object")
+        else:
+            make_transient(obj)
         return ret
 
     
@@ -60,15 +65,23 @@ class dbCrud(baseCrud):
 
     
     def save(self, obj):
-        nobj = self.dbsession.merge(obj)
-        ret = dbcon.safe_commit(self.dbsession)
+        ret = False
+        try:
+            nobj = self.dbsession.merge(obj)
+            ret = dbcon.safe_commit(self.dbsession)
+        except Exception, e:
+            logger.error("Error saving object")
         return ret
 
     
     def delete(self, obj):
-        nobj = self.dbsession.merge(obj)
-        self.dbsession.delete(nobj)
-        ret = dbcon.safe_commit(self.dbsession)
+        ret = False
+        try:
+            nobj = self.dbsession.merge(obj)
+            self.dbsession.delete(nobj)
+            ret = dbcon.safe_commit(self.dbsession)
+        except Exception, e:
+            logger.error("Error deleting object")
         return ret
 
     

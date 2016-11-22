@@ -22,14 +22,22 @@ def main():
     ordm.otype = 'SELL'
     ordm.quantity = 0.009
     ordm.price = 2602.1
-    ordm.asset = "BTC"
+    ordm.asset = 'BTC'
+    ordm.currency = 'BRL' 
     ordm.provider = btd.name
-    
-    #mng.add_order(ordm)
-    mng.flush_all()
-                                
-    time.sleep(10)
 
+    time.sleep(5)
+
+    for asset, funds in btd.funds_table.iteritems():
+        print asset, funds.total, funds.available, funds.tradable, funds.expected
+
+    mng.add_order(ordm)
+    mng.flush_all()
+
+    btd.update_funds()
+
+    time.sleep(5)
+    
     for asset, funds in btd.funds_table.iteritems():
         print asset, funds.total, funds.available, funds.tradable, funds.expected
 
