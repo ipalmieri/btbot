@@ -3,7 +3,8 @@ import btools, btorder
 
 
 logger = btools.logger
-        
+
+manager = orderManager()
 
 class orderManager():
     """Hub of orders to be sent to brokers
@@ -14,7 +15,6 @@ class orderManager():
         """Default constructor with empty structures"""
         self.main_queue = collections.deque()
         self.provider_hub = {}
-        self.open_orders = []
 
         
     def add_provider(self, broker):
