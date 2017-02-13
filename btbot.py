@@ -15,7 +15,20 @@ def main():
     dbcon.init_db()
 
     bta = btArena()
-    
+
+    mng = orderManager()
+    bif = mbinfo.mbInfo()
+    btd = mbtrade.mbProvider()
+    mng.add_provider(btd)
+
+    while not btd.funds_table:
+        time.sleep(1)
+
+    for asset, funds in btd.funds_table.iteritems():
+        print asset, funds.total, funds.available, funds.tradable, funds.expected
+                                                            
+
+
 
     
 if __name__ == '__main__':

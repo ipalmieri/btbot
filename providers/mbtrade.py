@@ -17,7 +17,7 @@ logger = btools.logger
 trade_timestamp = deque()
 
 # Constants
-REQUEST_HOST = 'www.mercadobitcoin.neta'
+REQUEST_HOST = 'www.mercadobitcoin.net'
 REQUEST_PATH = '/tapi/v3/'
 HTTPCON_TIMEOUT = 60 # http connection timeout in secs
 MAX_TRADE_COUNT = 60 # maximum number of trades within interval

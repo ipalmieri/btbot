@@ -4,7 +4,6 @@ import btools, btorder
 
 logger = btools.logger
 
-manager = orderManager()
 
 class orderManager():
     """Hub of orders to be sent to brokers
@@ -137,5 +136,3 @@ class orderManager():
         return isvalid
 
 
-
-    
