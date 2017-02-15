@@ -38,7 +38,7 @@ class mbProvider(baseProvider):
         self.name = 'MBITCOIN'
         self.threads = []
         #self.funds_table = {}
-        self.update_funds()
+        #self.update_funds()
 
     
     def execute_order(self, ordr):

@@ -16,10 +16,10 @@ class orderManager():
         self.provider_hub = {}
 
         
-    def add_provider(self, broker):
+    def add_provider(self, provider):
          """Adds broker to brokers dict"""
-         self.provider_hub[broker.name] = broker
-         logger.info("Provider " + broker.name + " added to hub")
+         self.provider_hub[provider.name] = provider
+         logger.info("Provider " + provider.name + " added to hub")
 
          
     def add_order(self, order):
@@ -136,3 +136,12 @@ class orderManager():
         return isvalid
 
 
+    def update_open_orders(self):
+        """Reloads information of open orders from providers"""
+        orders = btorder.order.get_by_status('OPEN')
+        for ordr in orders:
+            if ordr.provider in self.provider_hub:
+                self.provider_hub[ordr.provider].update_order(ordr)
+            else:
+                logger.warning("Provider " + ordr.provider + " is not " +
+                               "available at orderManager")
