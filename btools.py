@@ -6,12 +6,13 @@ import os
 
 
 logger = logging.getLogger("btbot")
-
+config_file = 'logconf.json'
+default_level = logging.INFO
 
 def init_logging():
-
-    config_file = "logconf.json"
-    default_level = logging.INFO
+    """Loads config file and starts logger"""
+    global config_file
+    global default_level
 
     if os.path.exists(config_file):
         with open(config_file, 'rt') as f:

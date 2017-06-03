@@ -25,11 +25,10 @@ def start_arena():
     
     # Recalculate current funds
     logger.info("Recalculating all funds")
-    # update funds    
+    for pname, pobj in _providers_list.items():
+        pobj.update_funds()
 
 
-def add_bot(bot):
-    pass
 
 def stop_arena():
 
@@ -38,17 +37,9 @@ def stop_arena():
     pass
 
 
-class btArena:
-    """Class to hold and host all strategies and bots
-    """
-    def __init(self):
-        pass
-    
-    def start(self):
-        pass
-
-    def stop(self):
-        pass
+def save_status(filename):
+    pass
 
 
-    
+def load_status(filename):
+    pass
