@@ -1,14 +1,15 @@
 
 basedir=$(dirname "$0")
 logdir=$basedir/logs
+setfile=$basedir/settings.py
 
-if ! [ -d $logdir ]; then
+if [ ! -d $logdir ]; then
     echo "Creating log folder $logdir"
     mkdir $logdir
 fi
 
-
-cat > $basedir/settings.py << EOF
+if [ ! -f $setfile ]; then
+    cat > $basedir/settings.py << EOF
 BTDATA_PARAMS = {
     'drivername': 'postgres',
     'host': 'SERVER',
@@ -23,5 +24,7 @@ MBTC_PARAMS = {
     'tapi_secret' : 'TAPISEC'
 }
 EOF
+fi
+
 
 
