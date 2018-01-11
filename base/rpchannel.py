@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod
+import zmq
 
 
 class rpcServer:
@@ -30,7 +31,10 @@ class rcpClient:
 
     
 
-
+class zmqServer(rpcServer):
+    """ZeroMQ pull-push server"""
+    def port = TCP_DEFPORT
+    def __init__(self, port):
 
 
 
