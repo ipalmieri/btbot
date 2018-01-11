@@ -11,8 +11,6 @@ def main():
     logger.error("Log test")
 
 
-    
-    
-    
+
 if __name__ == '__main__':
     main()
