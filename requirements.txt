@@ -1,8 +1,5 @@
-appdirs==1.4.0
-packaging==16.8
-psycopg2==2.6.2
-pyparsing==2.1.10
-pyzmq==16.0.3
-six==1.10.0
-SQLAlchemy==1.1.5
-zmq==0.0.0
+appdirs==1.4.3
+packaging==17.1
+pyparsing==2.2.0
+six==1.11.0
+SQLAlchemy==1.2.6
