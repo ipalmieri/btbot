@@ -4,7 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm.session import make_transient
 from sqlalchemy.engine.url import URL
 from contextlib import contextmanager
-import btools, settings
+from . import btools
+import settings
 
 logger = btools.logger
 engine = create_engine(URL(**settings.BTDATA_PARAMS))
@@ -23,7 +24,7 @@ def safe_commit(s):
     """Provides a safe commit with rollback."""
     try:
         s.commit()
-    except Exception, e:
+    except Exception as e:
         s.rollback()
         logger.error("Failed commit at safe_commit(): " + str(e))
     else:
@@ -38,7 +39,7 @@ def session_scope():
     try:
         yield sess
         sess.commit()
-    except Exception, e:
+    except Exception as e:
         sess.rollback()
         logger.error("Failed commit at session_scope(): " + str(e))
     finally:

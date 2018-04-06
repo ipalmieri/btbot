@@ -49,7 +49,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
                 tmp = json.loads(self.remote_info)
             else:
                 tmp = {}
-        except Exception, e:
+        except Exception as e:
             logger.error ("Error decoding order " + str(self.oid) + " remote_info")
         else:
             ret = tmp
@@ -58,7 +58,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
     def encode_remote_info(self, info):
         try:
             rinfo = json.dumps(info)
-        except Exception, e:
+        except Exception as e:
             logger.error("Error encoding order " + str(self.oid) + " remote_info")
             logger.debug("Info: " + str(info))
         else:
@@ -70,7 +70,7 @@ class order(dbcon.baseModel, arpersist.baseAR):
         try:
             ordr = s.query(order).filter(order.oid == oid).one()
             make_transient(ordr)
-        except Exception, e:
+        except Exception as e:
             logger.error("Order get_by_id(" + str(oid) + ") error: " + str(e))
             ordr = None
         finally:
@@ -84,11 +84,11 @@ class order(dbcon.baseModel, arpersist.baseAR):
         try:
             qry = s.query(order).filter(order.status == status)
             orders = qry.order_by(order.updated_ts).all()
-        except Exception, e:
+        except Exception as e:
             logger.error("Error getting order list: " + str(e))
             orders = None
         else:
-            map(make_transient, orders)            
+            list(map(make_transient, orders))            
         finally:
             s.expunge_all()
             s.close()

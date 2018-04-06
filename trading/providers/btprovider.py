@@ -5,10 +5,9 @@ import btmodels
 logger = btools.logger
 
 
-class baseProvider:
+class baseProvider(metaclass=ABCMeta):
     """ Base class for broker service providers
     """
-    __metaclass__ = ABCMeta
 
     def __init__(self):
         self.name = ''
@@ -72,7 +71,7 @@ class baseProvider:
     
     def recalculate_funds(self):
         """Recalculate tradable and expected funds"""
-        for asset, funds in self.funds_table.iteritems():
+        for asset, funds in self.funds_table.items():
             funds.tradable = funds.available
             funds.expected = funds.available
         added_list = btorder.order.get_by_status('ADDED')
@@ -111,10 +110,9 @@ class baseProvider:
                             forigin.expected = forigin.expected + value
 
     
-class baseInfo:
+class baseInfo(metaclass=ABCMeta):
     """ Base class for broker quote data
     """
-    __metaclass__ = ABCMeta
 
     def __init__(self):
         self.name = ''

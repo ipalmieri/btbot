@@ -1,10 +1,10 @@
-import httplib
-import urllib
+import http.client
+import urllib.request, urllib.parse, urllib.error
 import json
 import datetime
 from collections import OrderedDict
 import btools
-from btprovider import *
+from .btprovider import *
 from btmodels import dataQuote
 
 # Global variables
@@ -118,7 +118,7 @@ def info_request(command):
     ret = None
     conn = None
     try:
-        conn = httplib.HTTPSConnection(REQUEST_HOST, timeout=HTTPCON_TIMEOUT)
+        conn = http.client.HTTPSConnection(REQUEST_HOST, timeout=HTTPCON_TIMEOUT)
         conn.request('GET', REQUEST_PATH + command + '/')
         
         # Pre-process response

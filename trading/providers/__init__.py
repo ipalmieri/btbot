@@ -1,4 +1,4 @@
-import mbtrade
+from . import mbtrade
 
 __all__ = ['mbtrade']
 

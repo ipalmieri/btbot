@@ -1,10 +1,9 @@
 from abc import ABCMeta, abstractmethod
 
 
-class baseTrader:
+class baseTrader(metaclass=ABCMeta):
     """Base class for any trading bot
     """
-    __metaclass__ = ABCMeta
 
     def __init__(self):
         self.name = ''

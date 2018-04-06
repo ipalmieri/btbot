@@ -25,7 +25,7 @@ def start_arena():
     
     # Recalculate current funds
     logger.info("Recalculating all funds")
-    for pname, pobj in _providers_list.items():
+    for pname, pobj in list(_providers_list.items()):
         pobj.update_funds()
 
 

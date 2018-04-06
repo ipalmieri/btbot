@@ -2,13 +2,13 @@ import threading
 import time
 import hashlib
 import hmac
-import httplib
+import http.client
 import json
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import datetime
 from collections import OrderedDict, deque
 from decimal import Decimal
-from btprovider import *
+from .btprovider import *
 import btools, settings
 import btmodels
 
@@ -173,7 +173,7 @@ def update_funds_thread(provider):
         if 'response_data' in resp:
             if 'balance' in resp['response_data']:
                 fund_dict = resp['response_data']['balance']
-                for a, ainfo in fund_dict.iteritems():
+                for a, ainfo in fund_dict.items():
                     asset = a.upper()
                     if 'total' in ainfo and 'available' in ainfo:
                         ftable[asset] = btmodels.fundValues()
@@ -231,7 +231,7 @@ def process_order_data(mbdata, ordr):
         exec_quantity = mbdata['executed_quantity']
         exec_price = mbdata['executed_price_avg']
         fees = mbdata['fee']
-    except Exception, e:
+    except Exception as e:
         logger.error("Error reading order data: " + str(e))
         return False
 
@@ -319,7 +319,7 @@ def delayed_trade_request(params):
     
 def trade_request(params):
 
-    eparams = urllib.urlencode(params)
+    eparams = urllib.parse.urlencode(params)
     
     # Gerar MAC
     params_string = REQUEST_PATH + '?' + eparams
@@ -339,7 +339,7 @@ def trade_request(params):
     ret = None
     conn = None
     try:
-        conn = httplib.HTTPSConnection(REQUEST_HOST, timeout=HTTPCON_TIMEOUT)
+        conn = http.client.HTTPSConnection(REQUEST_HOST, timeout=HTTPCON_TIMEOUT)
         conn.request('POST', REQUEST_PATH, eparams, headers)
 
         # Pre-process response

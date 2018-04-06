@@ -1,14 +1,15 @@
 from abc import ABCMeta, abstractmethod
 from sqlalchemy.orm.session import make_transient
-import btools, dbcon, settings
+from . import btools
+from . import dbcon
+import settings
 
 logger = btools.logger
 
 
-class baseCrud:
+class baseCrud(metaclass=ABCMeta):
     """ Base class for CRUD operations and persistence
     """
-    __metaclass__ = ABCMeta    
     
     @abstractmethod
     def add(self, obj):
@@ -46,7 +47,7 @@ class dbCrud(baseCrud):
             self.dbsession.add(obj)
             ret = dbcon.safe_commit(self.dbsession)
             self.dbsession.refresh(obj)
-        except Exception, e:
+        except Exception as e:
             logger.error("Error adding object")
         else:
             make_transient(obj)
@@ -57,7 +58,7 @@ class dbCrud(baseCrud):
         try:
             obj = self.dbsession.merge(obj)
             self.dbsession.refresh(obj)
-        except Exception, e:
+        except Exception as e:
             logger.error("Error reloading object")
         else:
             make_transient(obj)
@@ -69,7 +70,7 @@ class dbCrud(baseCrud):
         try:
             nobj = self.dbsession.merge(obj)
             ret = dbcon.safe_commit(self.dbsession)
-        except Exception, e:
+        except Exception as e:
             logger.error("Error saving object")
         return ret
 
@@ -80,7 +81,7 @@ class dbCrud(baseCrud):
             nobj = self.dbsession.merge(obj)
             self.dbsession.delete(nobj)
             ret = dbcon.safe_commit(self.dbsession)
-        except Exception, e:
+        except Exception as e:
             logger.error("Error deleting object")
         return ret
 
