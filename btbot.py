@@ -10,13 +10,23 @@ def main():
 
     logger.error("Log test")
 
-    rpt = rpcagent.RpcProxy(None)
+    rpt = rpcchannel.RpcAsyncClient("localhost", 6666)
 
-    rpt.send("")
+    rpt.send("test send")
 
     rpt.start()
 
-    time.sleep(10)
+    time.sleep(2)
+    rpt.send("test")
+
+    time.sleep(20)
+ 
+    while True:
+        msg = rpt.recv()
+        if msg is None:
+            break;
+        else:
+            logger.debug(msg)
 
     rpt.stop()
 

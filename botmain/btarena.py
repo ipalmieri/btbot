@@ -4,6 +4,7 @@ import ordermngr
 logger = btools.logger
 
 _providers_list = {}
+_bot_list = {}
 _ordrmngr = None
 
 def start_arena():
@@ -34,6 +35,13 @@ def stop_arena():
 
     # kill remaining requests/threads
     
+    pass
+
+def add_bot(botobj):
+    pass
+
+    
+def add_provider():
     pass
 
 
